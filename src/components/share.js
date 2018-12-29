@@ -45,17 +45,10 @@ class Share extends Component {
             color: rgb(0, 0, 0);
           `}
         >
-          Share if you liked it:
+          Share this post:
         </p>
         {url && (
           <>
-            <FacebookShareButton
-              url={url}
-              quote={`Read ${post.title} by ${post.author}`}
-              className="social-icon"
-            >
-              <FacebookIcon size={32} round />
-            </FacebookShareButton>
             <TwitterShareButton
               url={url}
               title={`Read ${post.title} by ${post.author}`}
