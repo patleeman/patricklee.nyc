@@ -7,14 +7,14 @@ import Header from './header';
 import media from '../utils/media';
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=BioRhyme|Space+Mono');
+  @import url('https://fonts.googleapis.com/css?family=BioRhyme|Roboto+Mono');
 
   :root {
     font-size: 12px;
   }
 
   body {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -41,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   code {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
     word-break: break-word;
   }
 
