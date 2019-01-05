@@ -5,7 +5,6 @@ import Patrick from '../images/patrick.jpeg';
 
 const Container = styled.section`
   width: 100%;
-  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
