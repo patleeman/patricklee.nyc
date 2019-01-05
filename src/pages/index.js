@@ -24,7 +24,7 @@ class BlogIndex extends Component {
     const posts = data.allMarkdownRemark.edges;
     return (
       <Layout>
-        <SEO title="All Posts" keywords={[]} />
+        <SEO title="Patrick Lee" keywords={[]} />
         <Bio/>
         <main>
           <Title>Blog</Title>

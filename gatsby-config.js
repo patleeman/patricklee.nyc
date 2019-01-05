@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `PL`,
-    description: `Patrick is a New York based Web Developer and Entrepreneur.`,
+    title: `Patrick Lee`,
+    description: `Hi I'm Patrick, a software engineer based out of New York.`,
     author: `Patrick Lee`,
     social: {
       twitter: `patleeman`,
