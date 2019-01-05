@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 
-import Header from './header';
 import media from '../utils/media';
 
 const GlobalStyles = createGlobalStyle`
@@ -87,7 +86,6 @@ class Layout extends Component {
         `}
         render={data => (
           <>
-            <Header title={data.site.siteMetadata.title} />
             <Content>{children}</Content>
             <Footer />
             <GlobalStyles />

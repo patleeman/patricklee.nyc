@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Post from '../components/post';
+import Bio from "../components/bio";
 import media from '../utils/media';
 
 const Title = styled.h3`
@@ -24,8 +25,9 @@ class BlogIndex extends Component {
     return (
       <Layout>
         <SEO title="All Posts" keywords={[]} />
+        <Bio/>
         <main>
-          <Title>Posts</Title>
+          <Title>Blog</Title>
           {posts.map(({ node }) => {
             return <Post key={node.id} node={node} />;
           })}

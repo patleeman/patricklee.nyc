@@ -17,6 +17,9 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <Container>
+          <Link to="/" rel="prev">
+            Home
+          </Link>
           <Header>
             <Title>{post.frontmatter.title}</Title>
             <sub
