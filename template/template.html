@@ -6,10 +6,7 @@
 
     <title>${title}</title>
 
-    <meta
-      name="description"
-      content="Patrick Lee is a software engineer in New York."
-    />
+    <meta name="description" content="${description}" />
     <meta property="og:title" content="${title}" />
     <meta property="og:description" content="${description}" />
 
@@ -18,12 +15,56 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:url" content="https://www.patricklee.nyc" />
     <link rel="canonical" href="https://www.patricklee.nyc" />
-    $for(css)$
-    <link rel="stylesheet" href="$css$" />
-    $endfor$
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
 
   <body>
-    ${ body }
+    <section class="hero is-info is-medium">
+      <div class="hero-head">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+              <h1>Patrick Lee</h1>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="/"> Home </a>
+
+              <a class="navbar-item" href="/blog"> Blog </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">${ title }</p>
+          $if(description)$
+          <p class="subtitle">${ description }</p>
+          $endif$
+        </div>
+      </div>
+    </section>
+
+    <section class="section main">
+      <div class="container">
+        $if(created)$<span class="tag is-white">${created}</span>$endif$
+
+        <div class="content">${ body }</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Patrick Lee</p>
+      </div>
+    </footer>
   </body>
 </html>

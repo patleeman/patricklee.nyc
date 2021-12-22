@@ -1,6 +1,6 @@
 ---
 title: Patrick Lee
-created: 2021-12-22
+description: Hi, I build internet things!
 ---
 
 # Hello!

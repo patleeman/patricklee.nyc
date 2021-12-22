@@ -10,12 +10,19 @@ DOC_FOLDER=$WORKING_DIR/docs
 OUTPUT_FOLDER=$WORKING_DIR/build
 
 function build_md_file {
-    echo "Processing $1"
     markdown_file=$1
-    output_file=$(basename $1 .md).html
-    output_path=$OUTPUT_FOLDER/$output_file
+    output_path=$(echo $1 | sed "s/\/docs\//\/build\//g" | sed "s/.md/.html/g")
+
+    # Take markdown files in the docs folder that aren't named index.md and put
+    # them into their own directory as an index.html file.
+    if [[ $(basename $output_path) != "index.html" ]]; then
+        output_path=$(echo $output_path | sed "s/.html/\/index.html/g")
+    fi
+
+    mkdir -p $(dirname $output_path)
 
     cp -R styles/ $OUTPUT_FOLDER/styles/
+    cp -R public/ $OUTPUT_FOLDER/public/
 
     pandoc $markdown_file \
         -o $output_path \
@@ -23,6 +30,8 @@ function build_md_file {
         --standalone \
         --css styles/styles.css \
         --template template/template.html
+
+    echo "Processed $1 to $output_path"
 }
 
 echo "Clearing output folder"
