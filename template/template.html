@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>${title}</title>
+
+    <meta
+      name="description"
+      content="Patrick Lee is a software engineer in New York."
+    />
+    <meta property="og:title" content="${title}" />
+    <meta property="og:description" content="${description}" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://www.patricklee.nyc" />
+    <link rel="canonical" href="https://www.patricklee.nyc" />
+    $for(css)$
+    <link rel="stylesheet" href="$css$" />
+    $endfor$
+  </head>
+
+  <body>
+    ${ body }
+  </body>
+</html>
