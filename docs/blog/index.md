@@ -2,4 +2,6 @@
 title: Blog
 ---
 
-- [Test Post](./test_post)
+# Latest blog posts
+
+- [2021-12-22 Test Post](./test_post)

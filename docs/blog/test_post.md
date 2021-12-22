@@ -1,5 +1,6 @@
 ---
 title: Test Blog Post
+description: Ramblings of a madman
 created: 2021-12-22
 ---
 

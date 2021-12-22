@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <section class="hero is-info is-medium">
+    <section class="hero is-warning is-medium">
       <div class="hero-head">
         <nav class="navbar" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
@@ -45,9 +45,21 @@
 
       <div class="hero-body">
         <div class="container has-text-centered">
-          <p class="title">${ title }</p>
-          $if(description)$
-          <p class="subtitle">${ description }</p>
+          <div class="title-box">
+            <p class="title">${ title }</p>
+            $if(description)$
+            <p class="subtitle">${ description }</p>
+            $endif$
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <div class="container has-text-centered">
+          $if(created)$
+          <div class="date">
+            <p class="is-7"><strong>${created}</strong></p>
+          </div>
           $endif$
         </div>
       </div>
@@ -55,16 +67,31 @@
 
     <section class="section main">
       <div class="container">
-        $if(created)$<span class="tag is-white">${created}</span>$endif$
-
         <div class="content">${ body }</div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>Patrick Lee</p>
+        <span class="logo">
+          <a href="https://github.com/patleeman" target="_blank">
+            <img src="/public/github.png" alt="Github" />
+          </a>
+        </span>
+        <span class="logo">
+          <a href="https://www.linkedin.com/in/patrickleenyc/" target="_blank">
+            <img src="/public/linkedin.png" alt="Linkedin" />
+          </a>
+        </span>
       </div>
+
+      <div class="content has-text-centered">
+        <a target="_blank" href="https://github.com/patleeman/patricklee.nyc"
+          >Lazily built with 💻.</a
+        >
+      </div>
+
+      <div class="content has-text-centered">© 2021-2022 Patrick Lee</div>
     </footer>
   </body>
 </html>
