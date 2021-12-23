@@ -21,7 +21,7 @@ jobs:
 
       - name: Build
         run: \
-          apt install -y wget
+          apt install -y wget \
           wget https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-linux-amd64.tar.gz -O pandoc.tar.gz \
           tar -xf pandoc.tar.gz \
           cp pandoc-2.16.2/bin/pandoc /usr/local/bin \
