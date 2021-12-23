@@ -7,6 +7,7 @@ fi
 
 WORKING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 DOC_FOLDER=$WORKING_DIR/docs
+BLOG_FOLDER=$DOC_FOLDER/blog
 OUTPUT_FOLDER=$WORKING_DIR/build
 
 function build_md_file {
@@ -39,6 +40,28 @@ function build_md_file {
 
 echo "Clearing output folder"
 rm -rf $OUTPUT_FOLDER && mkdir build
+
+echo "Generating blog post partial"
+declare -a BLOG_POSTS
+while read file; do
+    url_path=$(echo $file | sed "s:docs::g" | sed "s:\.md::g")
+    date=$(grep "created:" $file | sed "s/created: //g")
+    title=$(grep "title:" $file | sed "s/title: //g")
+    BLOG_POSTS+=("$date;$title;$url_path")
+done < <(find -f docs/blog/*.md ! -name "index.md")
+
+# Sort the blog posts by date
+IFS=$'\n' SORTED_BLOG_POSTS=( $(for j in "${BLOG_POSTS[@]}"; do echo $j; done | sort -t ";" -k 1 -nr) )
+echo $SORTED_BLOG_POSTS
+
+template="<ul>"
+for ((i = 0; i < "${#SORTED_BLOG_POSTS[@]}"; i++)); do
+    post_string=${SORTED_BLOG_POSTS[$i]}
+    IFS=';' post=($post_string)
+    template+="<li><a href=\"${post[2]}\">[${post[0]}] ${post[1]}</a></li>"
+done
+template+="</ul>"
+echo $template > "template/blog.html"
 
 echo "Building static website"
 find $DOC_FOLDER -name "*.md" | while read file; do build_md_file "$file"; done
