@@ -26,10 +26,11 @@ function build_md_file {
 
     pandoc $markdown_file \
         -o $output_path \
-        -f gfm \
+        -f gfm+yaml_metadata_block \
         --standalone \
         --css styles/styles.css \
         --template template/template.html
+
 
     echo "Processed $1 to $output_path"
 }
