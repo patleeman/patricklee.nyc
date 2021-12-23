@@ -21,10 +21,10 @@ jobs:
 
       - name: Build
         run: \
-          sudo apt install -y wget
+          apt install -y wget
           wget https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-linux-amd64.tar.gz -O pandoc.tar.gz \
           tar -xf pandoc.tar.gz \
-          sudo cp pandoc-2.16.2/bin/pandoc /usr/local/bin \
+          cp pandoc-2.16.2/bin/pandoc /usr/local/bin \
           ./build.sh
 
       - name: Deploy
