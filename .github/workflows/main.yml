@@ -1,17 +1,16 @@
-
 name: CI
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,10 +19,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Install deps
-        run: sudo apt install pandoc
-        
       - name: Build
+        uses: docker://pandoc/core:latest
         run: ./build.sh
 
       - name: Deploy
@@ -33,4 +30,3 @@ jobs:
           publish_dir: ./build
           cname: patricklee.nyc
           external_repository: patleeman/patleeman.github.io
-          
