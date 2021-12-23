@@ -21,6 +21,7 @@ function build_md_file {
 
     mkdir -p $(dirname $output_path)
 
+    cp -R scripts/ $OUTPUT_FOLDER/scripts/
     cp -R styles/ $OUTPUT_FOLDER/styles/
     cp -R public/ $OUTPUT_FOLDER/public/
 
