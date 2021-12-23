@@ -35,11 +35,12 @@ function build_md_file {
         -T "Patrick Lee"
 
 
-    echo "Processed $1 to $output_path"
+    printf "\nConverting $1\n\t=> $output_path"
 }
 
-echo "Clearing output folder"
+echo "Cleaning up"
 rm -rf $OUTPUT_FOLDER && mkdir build
+rm template/blog.html
 
 echo "Generating blog post partial"
 declare -a BLOG_POSTS
@@ -52,7 +53,6 @@ done < <(find -f docs/blog/*.md ! -name "index.md")
 
 # Sort the blog posts by date
 IFS=$'\n' SORTED_BLOG_POSTS=( $(for j in "${BLOG_POSTS[@]}"; do echo $j; done | sort -t ";" -k 1 -nr) )
-echo $SORTED_BLOG_POSTS
 
 template="<ul>"
 for ((i = 0; i < "${#SORTED_BLOG_POSTS[@]}"; i++)); do
@@ -65,3 +65,6 @@ echo $template > "template/blog.html"
 
 echo "Building static website"
 find $DOC_FOLDER -name "*.md" | while read file; do build_md_file "$file"; done
+printf "\n\n"
+
+echo "Build complete"
