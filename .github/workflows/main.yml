@@ -19,14 +19,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Install deps
-        run: sudo apt install -y pandoc
-
       - name: Build
         run: \
+          sudo apt install -y wget
           wget https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-linux-amd64.tar.gz -O pandoc.tar.gz \
           tar -xf pandoc.tar.gz \
-          sudo cp pandoc-2.16.2/bin/pandoc /usr/local/bin
+          sudo cp pandoc-2.16.2/bin/pandoc /usr/local/bin \
+          ./build.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
