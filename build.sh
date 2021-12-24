@@ -49,7 +49,7 @@ while read file; do
     date=$(grep "created:" $file | sed "s/created: //g")
     title=$(grep "title:" $file | sed "s/title: //g")
     BLOG_POSTS+=("$date;$title;$url_path")
-done < <(find -f docs/blog/*.md ! -name "index.md")
+done < <(find "docs/blog" -name '*.md' ! -name "index.md")
 
 # Sort the blog posts by date
 IFS=$'\n' SORTED_BLOG_POSTS=( $(for j in "${BLOG_POSTS[@]}"; do echo $j; done | sort -t ";" -k 1 -nr) )
