@@ -4,7 +4,7 @@ function print_help {
     echo "Usage: ./blog [OPTION]...
     new
         post <title>    Create a new blog post
-        thought <title> Create a new fast thought
+        take <title>    Create a new hot take
     build               Builds the blog
     serve               Starts a local server
     help                Prints this help message
@@ -27,11 +27,11 @@ function new {
 title: $2
 created: $(date +"%Y-%m-%d")
 ---" > "docs/blog/${filename}"
-    elif [ "$1" == "thought" ]; then
+    elif [ "$1" == "take" ]; then
         echo "---
 title: $2
 created: $(date +"%Y-%m-%d")
----" > "docs/thoughts/${filename}"
+---" > "docs/takes/${filename}"
     fi
 }
 
