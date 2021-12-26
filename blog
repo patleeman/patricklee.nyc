@@ -17,7 +17,7 @@ function spin_up_dev_server {
     python3 -m http.server 8000
 }
 
-# Generate new blog posts or fast thoughts.
+# Generate new blog posts or hot take.
 function new {
     date=$(date +"%Y%m%d")
     title=$(echo "$2" | tr '[:upper:]' '[:lower:]' | sed s/\ /_/g)
