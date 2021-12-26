@@ -1,3 +1,31 @@
-# Spin up a super simple dev server.
-cd build
-python3 -m http.server 8000
+#!/bin/bash
+
+function print_help {
+    echo "Usage: ./blog [OPTION]
+    build       Builds the blog
+    serve       Starts a local server
+    help        Prints this help message
+    "
+}
+
+function spin_up_dev_server {
+    # Spin up a super simple dev server.
+    cd build
+    python3 -m http.server 8000
+}
+
+
+case $1 in
+    build)
+        ./build.sh
+        ;;
+    serve)
+        spin_up_dev_server
+        ;;
+    help)
+        print_help
+        ;;
+    *)
+        print_help
+        ;;
+esac
