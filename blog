@@ -19,6 +19,11 @@ function spin_up_dev_server {
 
 # Generate new blog posts or hot take.
 function new {
+    if [[ ! $2 ]]; then
+        echo "Please specify a title."
+        print_help
+        exit 1
+    fi
     date=$(date +"%Y%m%d")
     title=$(echo "$2" | tr '[:upper:]' '[:lower:]' | sed s/\ /_/g)
     filename="${date}_${title}.md"
