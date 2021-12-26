@@ -50,7 +50,8 @@ for f in modules/*.sh; do
 done
 
 # Execute our modules to generate partials
-generate_blog_summary
+generate_post_summary "blog"
+generate_post_summary "thoughts"
 
 echo "Building static website"
 find $DOC_FOLDER -name "*.md" | while read file; do build_md_file "$file"; done

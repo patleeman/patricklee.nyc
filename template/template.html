@@ -53,6 +53,8 @@
               <a class="navbar-item" href="/"> Home </a>
 
               <a class="navbar-item" href="/blog"> Blog </a>
+
+              <a class="navbar-item" href="/thoughts"> Thoughts </a>
             </div>
           </div>
         </nav>
@@ -88,6 +90,10 @@
 
           ${ if(show_blog_post_list) }
             ${ blog() }
+          ${ endif }
+
+          ${ if(show_thoughts_post_list) }
+            ${ thoughts() }
           ${ endif }
         </div>
       </div>

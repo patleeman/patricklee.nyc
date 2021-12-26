@@ -1,17 +1,38 @@
 #!/bin/bash
 
 function print_help {
-    echo "Usage: ./blog [OPTION]
-    build       Builds the blog
-    serve       Starts a local server
-    help        Prints this help message
+    echo "Usage: ./blog [OPTION]...
+    new
+        post <title>    Create a new blog post
+        thought <title> Create a new fast thought
+    build               Builds the blog
+    serve               Starts a local server
+    help                Prints this help message
     "
 }
 
+# Spin up a super simple dev server.
 function spin_up_dev_server {
-    # Spin up a super simple dev server.
     cd build
     python3 -m http.server 8000
+}
+
+# Generate new blog posts or fast thoughts.
+function new {
+    date=$(date +"%Y%m%d")
+    title=$(echo "$2" | tr '[:upper:]' '[:lower:]' | sed s/\ /_/g)
+    filename="${date}_${title}.md"
+    if [ "$1" == "post" ]; then
+        echo "---
+title: $2
+created: $(date +"%Y-%m-%d")
+---" > "docs/blog/${filename}"
+    elif [ "$1" == "thought" ]; then
+        echo "---
+title: $2
+created: $(date +"%Y-%m-%d")
+---" > "docs/thoughts/${filename}"
+    fi
 }
 
 
@@ -24,6 +45,9 @@ case $1 in
         ;;
     help)
         print_help
+        ;;
+    new)
+        new $2 "$3"
         ;;
     *)
         print_help

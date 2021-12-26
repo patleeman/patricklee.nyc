@@ -1,5 +1,6 @@
 build/
 template/blog.html
+template/thoughts.html
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,zsh
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,zsh
