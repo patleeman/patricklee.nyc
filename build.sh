@@ -42,26 +42,15 @@ echo "Cleaning up"
 rm -rf $OUTPUT_FOLDER && mkdir build
 rm template/blog.html
 
-echo "Generating blog post partial"
-declare -a BLOG_POSTS
-while read file; do
-    url_path=$(echo $file | sed "s:docs::g" | sed "s:\.md::g")
-    date=$(grep "created:" $file | sed "s/created: //g")
-    title=$(grep "title:" $file | sed "s/title: //g")
-    BLOG_POSTS+=("$date;$title;$url_path")
-done < <(find "docs/blog" -name '*.md' ! -name "index.md")
-
-# Sort the blog posts by date
-IFS=$'\n' SORTED_BLOG_POSTS=( $(for j in "${BLOG_POSTS[@]}"; do echo $j; done | sort -t ";" -k 1 -nr) )
-
-template="<ul>"
-for ((i = 0; i < "${#SORTED_BLOG_POSTS[@]}"; i++)); do
-    post_string=${SORTED_BLOG_POSTS[$i]}
-    IFS=';' post=($post_string)
-    template+="<li><a href=\"${post[2]}\">[${post[0]}] ${post[1]}</a></li>"
+# Source the modules so we have access to their functions
+for f in modules/*.sh; do
+    if [[ -r $f ]] && [[ -f $f ]]; then
+        source $f
+    fi
 done
-template+="</ul>"
-echo $template > "template/blog.html"
+
+# Execute our modules to generate partials
+generate_blog_summary
 
 echo "Building static website"
 find $DOC_FOLDER -name "*.md" | while read file; do build_md_file "$file"; done
