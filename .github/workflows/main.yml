@@ -35,13 +35,20 @@ jobs:
           cname: patricklee.nyc
           external_repository: patleeman/patleeman.github.io
 
+    outputs:
+      job-status: ${{ job.status }}
+
+  notify_status:
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [build]
+    steps:
       - name: Notify
-        if: success()
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            Patricklee.nyc deployment $GITHUB_RUN_ID successful.
+            Patricklee.nyc deployment ${{ env.GITHUB_RUN_ID }} was a ${{ needs.build.outputs.job-status }}.
 
-            Link to Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+            Link to Run: ${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}/actions/runs/${{ env.GITHUB_RUN_ID }}
