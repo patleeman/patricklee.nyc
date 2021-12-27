@@ -34,3 +34,14 @@ jobs:
           publish_dir: ./build
           cname: patricklee.nyc
           external_repository: patleeman/patleeman.github.io
+
+      - name: Notify
+        if: success()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            Patricklee.nyc deployment $GITHUB_RUN_ID successful.
+
+            Link to Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
