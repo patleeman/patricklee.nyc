@@ -14,46 +14,26 @@ function generate_post_summary {
     IFS=$'\n' SORTED_POSTS=( $(for j in "${POSTS[@]}"; do echo $j; done | sort -t ";" -k 1 -nr) )
 
     if [ "$1" == "blog" ]; then
-        template="<ul>\n"
+        template="<table class=\"table is-fullwidth\"><thead><tr><th>Date</th><th>Title</th></tr></thead><tbody>"
         for ((i = 0; i < "${#SORTED_POSTS[@]}"; i++)); do
             post_string=${SORTED_POSTS[$i]}
             IFS=';' post=($post_string)
-            template+="<li><a href=\"${post[2]}\">[${post[0]}] ${post[1]}</a></li>\n"
+            template+="<tr><td><strong>${post[0]}</strong></td><td><a href=\"${post[2]}\">${post[1]}</a></td></tr>\n"
         done
-        template+="</ul>\n"
+        template+="</tbody></table>\n"
         printf $template > "template/$1.html"
     elif [ "$1" == "takes" ]; then
-        template=""
+        template="<table class=\"table is-fullwidth\"><thead><tr><th>Date</th><th>Title</th><th>Take</th><th></th></tr></thead><tbody>"
         for ((i = 0; i < "${#SORTED_POSTS[@]}"; i++)); do
             post_string=${SORTED_POSTS[$i]}
             IFS=';' post=($post_string)
-            template+="<div class=\"card\">
-                <div class=\"card-content\">
-                    <div class=\"media\">
-                        <div class=\"media-content\">
-                            <p class=\"title is-4\"><a href=\"${post[2]}\">${post[1]}</a></p>
-                        </div>
-                    </div>
-                    <div class=\"content\">
-                        ${post[3]}
-                    </div>
-                    <div class=\"level\">
-                        <div class=\"level-left\">
-                            <div class=\"level-item\">
-                                <small>${post[0]}</small>
-                            </div>
-                        </div>
-                        <div class=\"level-right\">
-                            <div class=\"level-item\">
-                                <a href=\"${post[2]}\">Permalink</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>"
+            template+="<tr>
+                <td><strong>${post[0]}</strong></td>
+                <td>${post[1]}</td><td>${post[3]}</td>
+                <td><a href=\"${post[2]}\">link</a></td>
+            </tr>\n"
         done
-        template+="\n"
+        template+="</tbody></table>\n"
         printf $template > "template/$1.html"
     fi
 }
