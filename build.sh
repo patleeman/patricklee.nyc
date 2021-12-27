@@ -40,7 +40,6 @@ function build_md_file {
 
 echo "Cleaning up"
 rm -rf $OUTPUT_FOLDER && mkdir build
-rm template/blog.html
 
 # Source the modules so we have access to their functions
 for f in modules/*.sh; do
