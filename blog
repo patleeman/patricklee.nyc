@@ -31,13 +31,17 @@ function new {
         echo "---
 title: $2
 created: $(date +"%Y-%m-%d")
+show_social_links: true
 ---" > "docs/blog/${filename}"
+        code "docs/blog/${filename}"
     elif [ "$1" == "take" ]; then
         echo "---
 title: $2
 created: $(date +"%Y-%m-%d")
 ---" > "docs/takes/${filename}"
+        code "docs/takes/${filename}"
     fi
+
 }
 
 

@@ -20,4 +20,24 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // Set the social links on the page
+  const url = "https://twitter.com/intent/tweet";
+  const currentURL = window.location.href;
+
+  const mailToMessage = encodeURIComponent(
+    `Feedback for ${window.location.pathname}`
+  );
+  const mailToURL = `mailto:hello@patricklee.nyc?subject=${mailToMessage}`;
+  document.querySelector("#email-feedback").setAttribute("href", mailToURL);
+
+  const tweetAtMessage = `${url}?text=${encodeURIComponent(
+    `@patleeman ${currentURL}`
+  )}`;
+  document.querySelector("#tweet-at").setAttribute("href", tweetAtMessage);
+
+  const shareWithMessage = `${url}?text=${encodeURIComponent(
+    `Check out this post by @patleeman ${currentURL}`
+  )}`;
+  document.querySelector("#share-with").setAttribute("href", shareWithMessage);
 });

@@ -1,6 +1,7 @@
 ---
 title: Patrick Lee
 description: Hi, I build internet things!
+show_social_links: true
 ---
 
 # About
@@ -12,5 +13,3 @@ I am also quite fascinated with digital information organization systems. As a p
 I took a pretty non-traditional path to where I'm at today. I dropped out of college, spent a few years working odd jobs. In my late twenties, I went back to school, [starting at community college and completing my bachelors in Economics-Mathematics at Columbia University](/blog/20161212_community_college_to_columbia/). Working as a data analyst, I discovered I hated building excel models. I subsequently fell in love with software development while learning Python and switched careers.
 
 Software development is just another tool in my tool belt. I'm passionate about software that helps real people solve real problem. It's a huge bonus if I can do that at a very large scale.
-
-<a href="mailto:hello@patricklee.nyc?subject=Reaching%20out%20via%20your%20website" target="_blank">Contact Me</a>

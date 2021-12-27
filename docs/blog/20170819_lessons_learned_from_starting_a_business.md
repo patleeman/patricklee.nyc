@@ -1,6 +1,7 @@
 ---
 title: Lessons learned from starting a business while working full time.
 created: 2017-08-19
+show_social_links: true
 ---
 
 I started working on [Collate](http://collatenotes.com/) in December of 2016. I was dissatisfied with the note taking apps on the market and wanted a tool that would work for my needs. I had been toying with the idea and finally started writing code over the Christmas holiday. I had a basic prototype built with Electron, bootstrap and jQuery by February, then rebuilt it with Electron, Vue.js and Bulma from scratch because the code base was terrible. Today, Collate is profitable, has a couple hundred users, was featured on [Lifehacker](http://lifehacker.com/collate-is-a-privacy-focused-evernote-style-notes-app-1794500652) and is doing well by my standards. Here are some hard learned lessons from the last 8 months of working on Collate while maintaining a full time job:
