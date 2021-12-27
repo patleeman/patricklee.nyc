@@ -49,6 +49,6 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            Patricklee.nyc deployment ${{ GITHUB_RUN_ID }} was a ${{ needs.build.outputs.job-status }}.
+            Patricklee.nyc deployment was a ${{ needs.build.outputs.job-status }}.
 
-            Link to Run: ${{ GITHUB_SERVER_URL }}/${{ GITHUB_REPOSITORY }}/actions/runs/${{ GITHUB_RUN_ID }}
+            Link to Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
