@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Set the social links on the page
   const url = "https://twitter.com/intent/tweet";
-  const currentURL = window.location.href;
+  const currentURL = window.shortLink || window.location.href;
 
   const mailToMessage = encodeURIComponent(
     `Feedback for ${window.location.pathname}`

@@ -12,7 +12,6 @@ for f in modules/*.sh; do
     fi
 done
 
-
 WORKING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 DOC_FOLDER=$WORKING_DIR/docs
 BLOG_FOLDER=$DOC_FOLDER/blog
@@ -21,12 +20,20 @@ OUTPUT_FOLDER=$WORKING_DIR/build
 echo "Cleaning up"
 rm -rf $OUTPUT_FOLDER && mkdir build
 
-# Execute our modules to generate partials
+echo "Generating partials"
 generate_post_summary "blog"
 generate_post_summary "takes"
 
-echo "Building static website"
-find $DOC_FOLDER -name "*.md" | while read file; do build_md_file "$file"; done
-printf "\n\n"
+echo "Copying public assets"
+cp -R scripts/ $OUTPUT_FOLDER/scripts/
+cp -R styles/ $OUTPUT_FOLDER/styles/
+cp -R public/ $OUTPUT_FOLDER/public/
 
-echo "Build complete"
+echo "Building static website"
+find $DOC_FOLDER -name "*.md" | \
+    while read file; do
+        build_md_file "$file"
+        generate_shortcut "$file" "$DOC_FOLDER" "$OUTPUT_FOLDER"
+    done
+
+printf "\n\nBuild complete"

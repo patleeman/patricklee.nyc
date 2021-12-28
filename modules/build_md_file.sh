@@ -11,16 +11,13 @@ function build_md_file {
 
     mkdir -p $(dirname $output_path)
 
-    cp -R scripts/ $OUTPUT_FOLDER/scripts/
-    cp -R styles/ $OUTPUT_FOLDER/styles/
-    cp -R public/ $OUTPUT_FOLDER/public/
-
     pandoc $markdown_file \
         -o $output_path \
         -f gfm+yaml_metadata_block \
         --standalone \
         --css styles/styles.css \
         --template template/template.html \
+        --variable "short_link:$(echo "$file_name" | md5 | cut -c1-4)" \
         -T "Patrick Lee"
 
 
