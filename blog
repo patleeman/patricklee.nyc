@@ -1,13 +1,12 @@
 #!/bin/bash
 
 function print_help {
-    echo "Usage: ./blog [OPTION]...
-    new
-        post <title>    Create a new blog post
-        take <title>    Create a new hot take
-    build               Builds the blog
-    serve               Starts a local server
-    help                Prints this help message
+    echo "Usage: ./blog <command> [OPTION]...
+    new <(blog|take)> <title> [-p]      Create a new blog post
+        -p                              Adds a named subfolder in the public folder for assets
+    build                               Builds the blog
+    serve                               Starts a local server
+    help                                Prints this help message
     "
 }
 
@@ -19,29 +18,39 @@ function spin_up_dev_server {
 
 # Generate new blog posts or hot take.
 function new {
+    if [[ ! "$1" =~ ^(blog|take)$ ]]; then
+        echo "Incorrect post type"
+        print_help
+        exit 1
+    fi
+
     if [[ ! $2 ]]; then
         echo "Please specify a title."
         print_help
         exit 1
     fi
-    date=$(date +"%Y%m%d")
-    title=$(echo "$2" | tr '[:upper:]' '[:lower:]' | sed s/\ /_/g)
-    filename="${date}_${title}.md"
-    if [ "$1" == "post" ]; then
-        echo "---
-title: $2
-created: $(date +"%Y-%m-%d")
-show_social_links: true
----" > "docs/blog/${filename}"
-        code "docs/blog/${filename}"
-    elif [ "$1" == "take" ]; then
-        echo "---
-title: $2
-created: $(date +"%Y-%m-%d")
----" > "docs/takes/${filename}"
-        code "docs/takes/${filename}"
+
+    title=$2
+    date=$(date +"%Y-%m-%d")
+    filename="$(date +"%Y%m%d")_$(echo "$2" | tr '[:upper:]' '[:lower:]' | sed s/\ /_/g).md"
+    filepath="docs/$1/$filename"
+
+    frontmatter="---\n"
+    frontmatter+="title: $title\n"
+    frontmatter+="created: $date\n"
+    frontmatter+="show_social_links: true\n"
+    frontmatter+="tags: []\n"
+    frontmatter+="---\n"
+
+    echo -e "$frontmatter" > "$filepath"
+
+    if [[ "-p" == "$3" ]]; then
+        asset_folder="public/$1/$filename"
+        mkdir -p $asset_folder
+        echo "Asset folder created at $asset_folder"
     fi
 
+    code "$filepath"
 }
 
 
@@ -56,7 +65,7 @@ case $1 in
         print_help
         ;;
     new)
-        new $2 "$3"
+        new "$2" "$3" "$4"
         ;;
     *)
         print_help
