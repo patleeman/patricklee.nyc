@@ -17,7 +17,7 @@ function build_md_file {
         --standalone \
         --css styles/styles.css \
         --template template/template.html \
-        --variable "short_link:$(echo "$file_name" | md5 | cut -c1-4)" \
+        --variable "short_link:$(echo "$file_name" | md5sum | cut -c1-4)" \
         -T "Patrick Lee"
 
 

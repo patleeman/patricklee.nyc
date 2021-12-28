@@ -10,7 +10,7 @@ function generate_shortcut {
     fi
 
     # Shortcut is first 4 letters of md5(file_name)
-    short_name=$(echo "$file_name" | md5 | cut -c1-4)
+    short_name=$(echo "$file_name" | md5sum | cut -c1-4)
     short_name_folder="$output_folder/s/$short_name"
     short_name_file="$short_name_folder/index.html"
 
