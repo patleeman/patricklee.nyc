@@ -1,6 +1,7 @@
 
 function build_md_file {
     markdown_file=$1
+    short_link=$2
     output_path=$(echo $1 | sed "s/\/docs\//\/build\//g" | sed "s/.md/.html/g")
 
     # Take markdown files in the docs folder that aren't named index.md and put
@@ -11,13 +12,14 @@ function build_md_file {
 
     mkdir -p $(dirname $output_path)
 
+    echo $short_link
     pandoc $markdown_file \
         -o $output_path \
         -f gfm+yaml_metadata_block \
         --standalone \
         --css styles/styles.css \
         --template template/template.html \
-        --variable "short_link:$(echo "$file_name" | md5sum | cut -c1-4)" \
+        --variable "short_link:$short_link" \
         -T "Patrick Lee"
 
 

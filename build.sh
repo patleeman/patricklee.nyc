@@ -32,8 +32,9 @@ cp -R public/ $OUTPUT_FOLDER/public/
 echo "Building static website"
 find $DOC_FOLDER -name "*.md" | \
     while read file; do
-        build_md_file "$file"
-        generate_shortcut "$file" "$DOC_FOLDER" "$OUTPUT_FOLDER"
+        short_link=$(generate_shortcut "$file" "$DOC_FOLDER" "$OUTPUT_FOLDER")
+        build_md_file "$file" "$short_link"
+        
     done
 
 printf "\n\nBuild complete"
