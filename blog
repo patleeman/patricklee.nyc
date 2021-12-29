@@ -18,6 +18,10 @@ function spin_up_dev_server {
 
 # Generate new blog posts or hot take.
 function new {
+    declare -a post_types
+    post_types["blog"]="blog"
+    post_types["take"]="takes"
+
     if [[ ! "$1" =~ ^(blog|take)$ ]]; then
         echo "Incorrect post type"
         print_help
@@ -33,7 +37,7 @@ function new {
     title=$2
     date=$(date +"%Y-%m-%d")
     filename="$(date +"%Y%m%d")_$(echo "$2" | tr '[:upper:]' '[:lower:]' | sed s/\ /_/g).md"
-    filepath="docs/$1/$filename"
+    filepath="docs/${post_types[$1]}/$filename"
 
     frontmatter="---\n"
     frontmatter+="title: $title\n"
