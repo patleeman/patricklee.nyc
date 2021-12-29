@@ -2,7 +2,7 @@
 function generate_shortcut {
     file_name="$1"
     docs_folder="$2"
-    output_folder=$3
+    output_folder="$3"
 
     if [[ "$(basename $file_name)" == "index.md" ]]; then
         printf "\nSkipping shortcut generation for $file_name"
@@ -27,4 +27,5 @@ function generate_shortcut {
     redirect_path=$(echo "$file_name" | cut -c"$docs_folder_length"- | sed 's/\.md//')
     template="<html><head><meta http-equiv=\"refresh\" content=\"0; url=$redirect_path\"></head></html>"
     echo $template > "$short_name_file"
+    echo "$short_name"
 }
