@@ -108,27 +108,18 @@
     <section class="section main">
       <div class="container">
         <div class="content">
-          <div class="block">
-            ${ body }
-          </div>
-
+          ${ body }
 
           ${ if(show_blog_post_list) }
-            <div class="block">
-              ${ blog() }
-            </div>
+            ${ blog() }
           ${ endif }
 
           ${ if(show_hot_takes_post_list) }
-            <div class="block">
-              ${ takes() }
-            </div>
+            ${ takes() }
           ${ endif }
 
           ${ if(show_social_links) }
-            <div class="block">
-              ${ social() }
-            </div>
+            ${ social() }
           ${ endif }
         </div>
       </div>

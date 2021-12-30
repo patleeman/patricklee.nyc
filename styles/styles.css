@@ -3,6 +3,11 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+/* Fix weird issue with pre */
+pre {
+  white-space: pre-line !important;
+}
+
 .main {
   min-height: 60vh;
 }
