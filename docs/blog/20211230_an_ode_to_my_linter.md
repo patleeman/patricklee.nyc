@@ -5,7 +5,7 @@ show_social_links: true
 tags: []
 ---
 
-```txt
+```
 Oh my dearest linter,
 adding squiggly lines under my mistake.
 Gently teaching me why I'm wrong.
