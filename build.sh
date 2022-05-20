@@ -14,7 +14,6 @@ done
 
 WORKING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 DOC_FOLDER=$WORKING_DIR/docs
-BLOG_FOLDER=$DOC_FOLDER/blog
 OUTPUT_FOLDER=$WORKING_DIR/build
 
 echo "Cleaning up"
@@ -22,7 +21,6 @@ rm -rf $OUTPUT_FOLDER && mkdir build
 
 echo "Generating partials"
 generate_post_summary "blog"
-generate_post_summary "takes"
 
 echo "Copying public assets"
 cp -R scripts/ $OUTPUT_FOLDER/scripts/
@@ -34,7 +32,7 @@ find $DOC_FOLDER -name "*.md" | \
     while read file; do
         short_link=$(generate_shortcut "$file" "$DOC_FOLDER" "$OUTPUT_FOLDER")
         build_md_file "$file" "$short_link"
-        
+
     done
 
 printf "\n\nBuild complete"

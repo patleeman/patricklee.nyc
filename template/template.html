@@ -72,11 +72,9 @@
 
           <div id="navMenu" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item" href="/"> Home </a>
+              <a class="navbar-item" href="/"> Blog </a>
 
-              <a class="navbar-item" href="/blog"> Blog </a>
-
-              <a class="navbar-item" href="/takes"> Hot Takes </a>
+              <a class="navbar-item" href="/about"> About </a>
             </div>
           </div>
         </nav>
@@ -112,10 +110,6 @@
 
           ${ if(show_blog_post_list) }
             ${ blog() }
-          ${ endif }
-
-          ${ if(show_hot_takes_post_list) }
-            ${ takes() }
           ${ endif }
 
           ${ if(show_social_links) }

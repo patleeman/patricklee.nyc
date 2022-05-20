@@ -2,11 +2,9 @@
 
 function print_help {
     echo "Usage: ./blog <command> [OPTION]...
-    new <(blog|take)> <title> [-p]      Create a new blog post
-        -p                              Adds a named subfolder in the public folder for assets
+    new <title>                         Create a new blog post
     build                               Builds the blog
     serve                               Starts a local server
-    help                                Prints this help message
     "
 }
 
@@ -18,26 +16,16 @@ function spin_up_dev_server {
 
 # Generate new blog posts or hot take.
 function new {
-    declare -a post_types
-    post_types["blog"]="blog"
-    post_types["take"]="takes"
-
-    if [[ ! "$1" =~ ^(blog|take)$ ]]; then
-        echo "Incorrect post type"
-        print_help
-        exit 1
-    fi
-
-    if [[ ! $2 ]]; then
+    if [[ ! $1 ]]; then
         echo "Please specify a title."
         print_help
         exit 1
     fi
 
-    title=$2
+    title=$1
     date=$(date +"%Y-%m-%d")
-    filename="$(date +"%Y%m%d")_$(echo "$2" | tr '[:upper:]' '[:lower:]' | sed s/\ /_/g).md"
-    filepath="docs/${post_types[$1]}/$filename"
+    filename="$(date +"%Y%m%d")_$(echo "$1" | tr '[:upper:]' '[:lower:]' | sed s/\ /_/g).md"
+    filepath="docs/blog/$filename"
 
     frontmatter="---\n"
     frontmatter+="title: $title\n"
@@ -47,12 +35,6 @@ function new {
     frontmatter+="---\n"
 
     echo -e "$frontmatter" > "$filepath"
-
-    if [[ "-p" == "$3" ]]; then
-        asset_folder="public/$1/$filename"
-        mkdir -p $asset_folder
-        echo "Asset folder created at $asset_folder"
-    fi
 
     code "$filepath"
 }

@@ -5,6 +5,8 @@ show_social_links: true
 tags: [productivity]
 ---
 
+# Note taking hell
+
 I have a hard time sticking with a note taking system. I think at this point I've tested all the major note taking tools:
 
 - Evernote
