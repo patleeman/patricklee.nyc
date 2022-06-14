@@ -14,7 +14,7 @@ function spin_up_dev_server {
     python3 -m http.server 8000
 }
 
-# Generate new blog posts or hot take.
+# Generate new blog posts
 function new {
     if [[ ! $1 ]]; then
         echo "Please specify a title."
