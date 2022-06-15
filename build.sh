@@ -20,7 +20,7 @@ echo "Cleaning up"
 rm -r "$OUTPUT_FOLDER" && mkdir build
 
 echo "Generating partials"
-generate_post_summary "blog"
+generate_post_summary
 
 echo "Copying public assets"
 cp -R public/ "$OUTPUT_FOLDER/public/"
@@ -28,9 +28,11 @@ cp -R public/ "$OUTPUT_FOLDER/public/"
 echo "Building static website"
 find "$DOC_FOLDER" -name "*.md" | \
     while read -r file; do
-        short_link=$(generate_shortcut "$file" "$DOC_FOLDER" "$OUTPUT_FOLDER")
-        build_md_file "$file" "$short_link"
+        build_md_file "$file"
 
     done
+
+echo "Build RSS feed"
+generate_RSS_feed
 
 printf "\n\nBuild complete"
