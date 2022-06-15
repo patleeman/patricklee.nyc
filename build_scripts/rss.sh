@@ -54,7 +54,7 @@ END
 </rss>
 END
 )
-
+    touch "build/rss.xml"
     echo -e "$template" > "build/rss.xml"
 }
 
