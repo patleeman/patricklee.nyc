@@ -57,5 +57,3 @@ END
     touch "build/rss.xml"
     echo -e "$template" > "build/rss.xml"
 }
-
-generate_RSS_feed
