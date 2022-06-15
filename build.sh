@@ -23,7 +23,7 @@ echo "Generating partials"
 generate_post_summary
 
 echo "Copying public assets"
-cp -R public "$OUTPUT_FOLDER/"
+cp -R public "$OUTPUT_FOLDER/public"
 
 echo "Building static website"
 find "$DOC_FOLDER" -name "*.md" | \
