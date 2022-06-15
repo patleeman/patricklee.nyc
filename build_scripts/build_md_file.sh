@@ -16,7 +16,7 @@ function build_md_file {
         -o "$output_path" \
         -f gfm+yaml_metadata_block \
         --standalone \
-        --css styles/styles.css \
+        --css public/styles/styles.css \
         --template template/template.html \
         -T "Patrick Lee"
 
