@@ -6,9 +6,9 @@ if ! pandoc -v > /dev/null ; then
 fi
 
 # Source the modules so we have access to their functions
-for f in modules/*.sh; do
+for f in build_scripts/*.sh; do
     if [[ -r $f ]] && [[ -f $f ]]; then
-        source $f
+        source "$f"
     fi
 done
 
@@ -17,19 +17,17 @@ DOC_FOLDER=$WORKING_DIR/docs
 OUTPUT_FOLDER=$WORKING_DIR/build
 
 echo "Cleaning up"
-rm -rf $OUTPUT_FOLDER && mkdir build
+rm -r "$OUTPUT_FOLDER" && mkdir build
 
 echo "Generating partials"
 generate_post_summary "blog"
 
 echo "Copying public assets"
-cp -R scripts/ $OUTPUT_FOLDER/scripts/
-cp -R styles/ $OUTPUT_FOLDER/styles/
-cp -R public/ $OUTPUT_FOLDER/public/
+cp -R public/ "$OUTPUT_FOLDER/public/"
 
 echo "Building static website"
-find $DOC_FOLDER -name "*.md" | \
-    while read file; do
+find "$DOC_FOLDER" -name "*.md" | \
+    while read -r file; do
         short_link=$(generate_shortcut "$file" "$DOC_FOLDER" "$OUTPUT_FOLDER")
         build_md_file "$file" "$short_link"
 
