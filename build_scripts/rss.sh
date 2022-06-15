@@ -25,7 +25,7 @@ function generate_RSS_feed {
     declare items
     while read -r file; do
         url_path=$(echo "$file" | sed "s:docs\/::g" | sed "s:\.md::g")
-        date=$(grep "created:" "$file" | sed "s/created: //g")
+        date=$(head -5 "$file" | grep "created:" | sed "s/created: //g")
         converted_date=$(convert_date_format_822 "%Y-%m-%d" "$date")
         title=$(grep "title:" "$file" | sed "s/title: //g")
         html=$(pandoc "$file")

@@ -30,7 +30,6 @@ echo "Building static website"
 find "$DOC_FOLDER" -name "*.md" | \
     while read -r file; do
         build_md_file "$file"
-
     done
 
 echo "Build RSS feed"

@@ -6,8 +6,8 @@ function generate_post_summary {
     declare -a POSTS
     while read -r file; do
         url_path=$(echo "$file" | sed "s:docs\/::g" | sed "s:\.md::g")
-        date=$(grep "created:" "$file" | sed "s/created: //g")
-        title=$(grep "title:" "$file" | sed "s/title: //g")
+        date=$(head -5 "$file" | grep "created:" | sed "s/created: //g")
+        title=$(head -5 "$file" | grep "title:" | sed "s/title: //g")
         html=$(pandoc "$file")
         POSTS+=("$date;$title;$url_path;$html")
     done < <(find "docs/blog" -name '*.md' ! -name "index.md")
