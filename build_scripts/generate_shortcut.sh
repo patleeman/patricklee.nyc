@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 function generate_shortcut {
     file_name="$1"

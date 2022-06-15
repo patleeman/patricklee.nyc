@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Generates a blog summary partial in the template folder.
 function generate_post_summary {
     echo "Generating $1 post partial"
