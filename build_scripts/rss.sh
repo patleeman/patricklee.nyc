@@ -28,11 +28,12 @@ function generate_RSS_feed {
         date=$(grep "created:" "$file" | sed "s/created: //g")
         converted_date=$(convert_date_format_822 "%Y-%m-%d" "$date")
         title=$(grep "title:" "$file" | sed "s/title: //g")
+        html=$(pandoc "$file")
         items+=$(cat << END
 
     <item>
       <title>${title}</title>
-      <description>${title}</description>
+      <description><![CDATA[${html}]]></description>
       <link>https://patricklee.nyc/$url_path</link>
       <pubDate>${converted_date}</pubDate>
     </item>
