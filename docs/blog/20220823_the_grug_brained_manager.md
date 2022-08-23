@@ -5,7 +5,7 @@ show_social_links: true
 tags: [management]
 ---
 
-# The grug brained manager
+# The Grug Brained Manager
 
 ![](/public/blog/20220823_the_grug_brained_manager.md/grug.png)
 
@@ -184,6 +184,12 @@ grug know that when manager suggest thing, it easy for people to take it as mand
 grug try to use simple language whenever possible. grug has many English as second language team members and wants to make sure they can understand grug.
 
 ![](/public/blog/20220823_the_grug_brained_manager.md/whywastetime.gif)
+
+# Grug like
+
+- [The Manager's Path by Camille Fournier](https://www.goodreads.com/book/show/33369254-the-manager-s-path)
+- [Career Development: What It Really Means to be a Manager, Director, or VP](https://kellblog.com/2015/03/08/career-development-what-it-really-means-to-be-a-manager-director-or-vp/)
+- [Advice for Engineering Managers Who Want to Climb the Ladder](https://charity.wtf/2022/06/13/advice-for-engineering-managers-who-want-to-climb-the-ladder/)
 
 # Conclusion
 
