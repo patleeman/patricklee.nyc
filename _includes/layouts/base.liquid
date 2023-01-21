@@ -1,0 +1,20 @@
+
+<html lang="en">
+  {% include "layouts/header.liquid" %}
+
+  <body>
+      {% include "layouts/nav.liquid" %}
+
+      <section class="section main">
+        <div class="container">
+          <div class="content">
+            {{ content }}
+          </div>
+        </div>
+      </section>
+
+      {% include "layouts/footer.liquid" %}
+
+      {% include "layouts/scripts.liquid" %}</body>
+  </body>
+</html>

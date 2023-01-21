@@ -1,0 +1,22 @@
+<section class="hero is-white is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="title-box">
+        <p class="title">{{ title }}</p>
+        <p class="subtitle">{{ description }}</p>
+      </div>
+    </div>
+  </div>
+
+  {% if date %}
+    <div class="hero-footer">
+      <div class="container has-text-centered">
+        <div class="date">
+          <p class="is-7">
+            <strong>{{ date }}</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</section>

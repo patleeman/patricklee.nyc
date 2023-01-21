@@ -1,4 +1,5 @@
 ---
+layout: about.liquid
 title: Patrick Lee
 description: Hi, I build internet things!
 show_social_links: true
@@ -6,7 +7,7 @@ show_social_links: true
 
 # About
 
-I'm a software engineer and team lead at [Noom](https://www.noom.com) where I help to lead the Growth team. I'm passionate about the intersection between marketing, experimentation, and software engineering. Helping companies scale is incredibly satisfying and I've found that Growth teams are where I can best apply my skills.
+I'm a software engineer, manager, and team leader with experience building and scaling Growth teams. I'm passionate about the intersection between marketing, experimentation, and software engineering. Helping companies scale is incredibly satisfying and I've found that Growth teams are where I can best apply my skills.
 
 I am also quite fascinated with digital information organization systems. As a productivity geek, most of my time is spent figuring out how to be more productive, therefore making myself less productive. It's a vicious cycle. I started a small company called [Collate Notes](https://github.com/Collateapp/CollateNotes) that sold a note taking app for a while. I also created an open source note taking Visual Studio Extension called [VSNotes](https://marketplace.visualstudio.com/items?itemName=patricklee.vsnotes). I spend a lot of time thinking about information management and how to disseminate knowledge.
 
