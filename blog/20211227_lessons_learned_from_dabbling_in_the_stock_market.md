@@ -1,7 +1,11 @@
 ---
+layout: blog-post.liquid
 title: Lessons learned from dabbling in the stock market
-created: 2021-12-27
-show_social_links: true
+date: 2021-12-27
+permalink: "blog/{{ title | slugify }}/index.html"
+tags:
+  - post
+  - finance
 ---
 
 I've dabbled in investing in the past but over the last two years I've really gotten involved heavily with managing my portfolio. I'm still a complete amateur but I did pick up some very valuable lessons:

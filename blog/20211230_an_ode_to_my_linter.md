@@ -1,8 +1,11 @@
 ---
+layout: blog-post.liquid
 title: An ode to my linter
-created: 2021-12-30
-show_social_links: true
-tags: []
+date: 2021-12-30
+permalink: "blog/{{ title | slugify }}/index.html"
+tags:
+  - post
+  - programming
 ---
 
 ```

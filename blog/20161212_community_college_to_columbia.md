@@ -1,8 +1,12 @@
 ---
+layout: blog-post.liquid
 title: From Community College to Columbia
 description: My journey as a college drop out
-created: 2016-12-12
-show_social_links: true
+permalink: "blog/{{ title | slugify }}/index.html"
+date: 2016-12-12
+tags:
+  - post
+  - life
 ---
 
 I dropped out of college at twenty. The next few years were spent at various jobs until I ended up as a legal assistant at a law firm. The firm was filled with fax machines, typewriters, and massive paper files. What was the norm in 1988 was still the norm in the legal industry at the time. It was a slow moving beast, mired in paper and yesterday’s technology. I wanted to work with modern technology and be part of the future but there was no future for an aimless college dropout. I couldn’t see a way forward, so I went back.

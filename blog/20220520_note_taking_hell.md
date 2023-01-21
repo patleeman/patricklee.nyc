@@ -1,8 +1,11 @@
 ---
+layout: blog-post.liquid
 title: Note taking hell
-created: 2022-05-20
-show_social_links: true
-tags: [productivity]
+date: 2022-05-20
+permalink: "blog/{{ title | slugify }}/index.html"
+tags:
+  - post
+  - knowledge-management
 ---
 
 # Note taking hell

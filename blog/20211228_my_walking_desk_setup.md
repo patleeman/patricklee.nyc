@@ -1,8 +1,11 @@
 ---
+layout: blog-post.liquid
 title: My walking desk setup
-created: 2021-12-28
-show_social_links: true
-tags: []
+date: 2021-12-28
+permalink: "blog/{{ title | slugify }}/index.html"
+tags:
+  - post
+  - fitness
 ---
 
 Over the course of 2020 and 2021 I've become increasingly sedentary with lockdown and full remote work. Having gone from commuting into the office 1-2 times a week down to zero meant I had less opportunity to walk. Along with the birth of my son and having less time and energy to exercise I needed to find a way to integrate more walking into my routine. If I could figure out how to exercise while working then I would have more time to spend on more interesting things, a win-win situation!

@@ -1,8 +1,11 @@
 ---
+layout: blog-post.liquid
 title: The Grug Brained Manager
-created: 2022-08-23
-show_social_links: true
-tags: [management]
+date: 2022-08-23
+permalink: "blog/{{ title | slugify }}/index.html"
+tags:
+  - post
+  - management
 ---
 
 # The Grug Brained Manager

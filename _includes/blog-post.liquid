@@ -1,11 +1,8 @@
 ---
 layout: layouts/base.liquid
-title: ""
-description: ""
-date: "2023-01-01"
+eleventyImport:
+  collections: ["post"]
 ---
-{% include "layouts/hero.liquid" %}
-
 <section class="section main">
   <div class="container">
     <div class="content">
@@ -13,3 +10,5 @@ date: "2023-01-01"
     </div>
   </div>
 </section>
+
+{% include "layouts/social-share.liquid" %}

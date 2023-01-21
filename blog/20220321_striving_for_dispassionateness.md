@@ -1,8 +1,11 @@
 ---
+layout: blog-post.liquid
 title: Striving for dispassionateness
-created: 2022-03-21
-show_social_links: true
-tags: ["leadership", "management"]
+date: 2022-03-21
+permalink: "blog/{{ title | slugify }}/index.html"
+tags:
+  - post
+  - management
 ---
 
 # Striving for dispassionateness

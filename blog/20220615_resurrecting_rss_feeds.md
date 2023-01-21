@@ -1,9 +1,14 @@
 ---
+layout: blog-post.liquid
 title: Resurrecting RSS feeds
-created: 2022-06-15
-show_social_links: true
-tags: []
+date: 2022-06-15
+permalink: "blog/{{ title | slugify }}/index.html"
+tags:
+  - post
+  - programming
 ---
+
+Update (2023-01-21): I've migrated this blog to [eleventy](https://www.11ty.dev/) and use its built in RSS/Atom feed generator now.
 
 # The good ole days
 

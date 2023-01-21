@@ -1,7 +1,11 @@
 ---
+layout: blog-post.liquid
 title: I should have learned more bash sooner
-created: 2021-12-26
-show_social_links: true
+date: 2021-12-26
+permalink: "blog/{{ title | slugify }}/index.html"
+tags:
+  - post
+  - programming
 ---
 
 Bash tools are super powerful once you get a hang of using it. This whole blog is pretty much [a bunch of scripts and Pandoc](https://github.com/patleeman/patricklee.nyc/). Its pretty cool what you can build once you get over the learning curve.
