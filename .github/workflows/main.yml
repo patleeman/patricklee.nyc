@@ -18,21 +18,20 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
       - name: Build
         run: |
-          sudo apt-get install -y wget
-          wget https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-linux-amd64.tar.gz
-          tar -xf pandoc*.tar.gz
-          cp pandoc-2.16.2/bin/pandoc /usr/local/bin
-          ./build.sh
-          if [[ ! -f ./build/index.html ]]; then echo "index.html is missing!"; exit 1; fi
+          npm ci
+          npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./_site
           cname: patricklee.nyc
           external_repository: patleeman/patleeman.github.io
 
