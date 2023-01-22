@@ -8,9 +8,9 @@ tags:
   - programming
 ---
 
-Update (2023-01-21): I've migrated this blog to [eleventy](https://www.11ty.dev/) and use its built in RSS/Atom feed generator now.
-
 # The good ole days
+
+> **Update (2023-01-21): I've migrated this blog to [eleventy](https://www.11ty.dev/) and use its built in RSS/Atom feed generator now.**
 
 Back when I was a young lad, RSS feeds were _the_ way to stay up to date on news, blogs, and other content. You'd find sites you liked, then add their content to your RSS feed reader and then you'd be able to go to a single place to view all your news and content. You'd be able to curate a large number of sites and read new items on a daily basis. Those were the days!
 

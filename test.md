@@ -1,5 +1,7 @@
 ---
+layout: blog-post.liquid
 title: "Test Page"
+description: "Test Description: a way to add more context"
 ---
 
 # Markdown: Syntax

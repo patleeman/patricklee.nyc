@@ -2,18 +2,19 @@
 @import "./variables.scss";
 @import "./node_modules/bulma/bulma.sass";
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+pre,
+code {
+  background-color: $bg-blue-dusty;
+  color: $text;
 }
 
-/* Fix weird issue with pre */
-pre {
-  white-space: pre-line !important;
+.content blockquote,
+blockquote {
+  border-color: $green;
 }
 
 .main {
-  min-height: 60vh;
+  min-height: 80vh;
 }
 
 .container {
@@ -21,15 +22,10 @@ pre {
 }
 
 /* Navbar */
-
 .navbar {
   background-color: inherit;
   max-width: 800px;
   margin: 0 auto;
-}
-
-.navbar-item h1 {
-  font-weight: 800;
 }
 
 .navbar-menu {
