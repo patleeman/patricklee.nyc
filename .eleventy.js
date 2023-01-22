@@ -1,11 +1,23 @@
 const fs = require("fs");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { DateTime } = require("luxon");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const eleventySass = require("eleventy-sass");
 
 const NOT_FOUND_PATH = "_site/404.html";
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
+  const eleventySassOptions = {
+    compileOptions: {
+      permalink: function (contents, inputPath) {
+        return (data) => {
+          return `public/styles/${data.page.filePathStem}.css`;
+          // return data.page.filePathStem.replace(/^\/scss\//, "/css/") + ".css";
+        };
+      },
+    },
+  };
+  eleventyConfig.addPlugin(eleventySass, eleventySassOptions);
 
   // Add 404 page
   eleventyConfig.setBrowserSyncConfig({

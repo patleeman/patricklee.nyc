@@ -19,6 +19,7 @@ pre {
 /* Navbar */
 
 .navbar {
+  background-color: inherit;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -29,7 +30,7 @@ pre {
 
 /* Hero */
 .hero {
-  background-image: url(https://source.unsplash.com/random/?nature,calming,relaxed);
+  background-image: url(https://source.unsplash.com/random/900x300?nature,calming,relaxed);
   background-size: cover;
   background-position: center;
 }
