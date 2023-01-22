@@ -1,27 +1,17 @@
 # Patricklee.nyc
 
-This is a super simple Pandoc static site generator tied to my personal website https://patricklee.nyc.
+This is my personal website https://patricklee.nyc using [eleventy](https://www.11ty.dev).
 
 # Quickstart
 
 Build the site.
 
 ```
-./blog build
+npm run build
 ```
 
 Spin up the bare bones dev server.
 
 ```
-./blog serve
+npm run dev
 ```
-
-Create new blog posts
-
-```
-./blog new <title>
-```
-
-# Blog folder
-
-As part of the build process, the script generates a partial `blog.html` in the template directory which contains a sorted list of all the markdown files in the blog folder.

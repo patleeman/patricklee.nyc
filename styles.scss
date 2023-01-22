@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import "./variables.scss";
+@import "./node_modules/bulma/bulma.sass";
+
+pre,
+code {
+  background-color: $bg-blue-dusty;
+  color: $text;
+}
+
+.content blockquote,
+blockquote {
+  border-color: $green;
+}
+
+.main {
+  min-height: 80vh;
+}
+
+.container {
+  max-width: 800px !important;
+}
+
+/* Navbar */
+.navbar {
+  background-color: inherit;
+  max-width: 800px;
+  margin: 0 auto;
+
+  .nav-logo {
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+}
+
+.navbar-menu {
+  box-shadow: none;
+}
+
+.bg-squares {
+  background:
+    linear-gradient(135deg, #0000 20.5%, #193549 0 29.5%, #0000 0) 0 5px,
+    linear-gradient(45deg, #0000 8%, #193549 0 17%, #0000 0 58%) 10px 0,
+    linear-gradient(135deg, #0000 8%, #193549 0 17%, #0000 0 58%, #193549 0 67%, #0000 0),
+    linear-gradient(45deg, #0000 8%, #193549 0 17%, #0000 0 58%, #193549 0 67%, #0000 0 83%, #193549 0 92%, #0000 0),
+    #35434d;
+  background-size: 20px 20px;
+}
+
+/* Hero */
+.hero {
+  .title-box {
+    padding: 1rem;
+    border-radius: 4px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.table {
+  background-color: inherit;
+}
+
+.date strong {
+  color: $grey;
+}
+
+/* Footer */
+.logo img {
+  max-height: 32px;
+}
+
+/* RSS Icon */
+.rss-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.centered-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

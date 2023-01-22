@@ -1,0 +1,20 @@
+---
+layout: layouts/base.liquid
+eleventyImport:
+  collections: ["post"]
+---
+<section class="section main">
+  <div class="container">
+    {% if date %}
+      <div class="date">
+        <p class="is-7">
+          <strong>{{ page.date | postDate }}</strong>
+        </p>
+      </div>
+    {% endif %}
+    <div class="content">
+      {{ content }}
+    </div>
+    {% include "layouts/social-share.liquid" %}
+  </div>
+</section>
