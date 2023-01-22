@@ -12,7 +12,6 @@ module.exports = function (eleventyConfig) {
       permalink: function (contents, inputPath) {
         return (data) => {
           return `public/styles/${data.page.filePathStem}.css`;
-          // return data.page.filePathStem.replace(/^\/scss\//, "/css/") + ".css";
         };
       },
     },
