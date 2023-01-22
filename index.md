@@ -1,6 +1,9 @@
 ---
 layout: home.liquid
-title: Blog Posts
+title: Patrick Lee
+pagination:
+  data: collections.post
+  size: 8
+  alias: post
+  reverse: true
 ---
-
-# {{ title }}
