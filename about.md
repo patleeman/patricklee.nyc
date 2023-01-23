@@ -1,8 +1,6 @@
 ---
 layout: about.liquid
-title: Patrick Lee
-description: Hi, I build internet things!
-show_social_links: true
+title: About Patrick
 ---
 
 <div style="display:flex;justify-content:center;">

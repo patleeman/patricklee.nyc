@@ -1,6 +1,6 @@
 ---
 layout: about.liquid
-title: Uses
+title: Patrick Uses
 description: Let's talk shop!
 show_social_links: true
 ---
