@@ -1,7 +1,7 @@
 ---
 layout: social.liquid
 pagination:
-  data: collections.post
+  data: collections.all
   size: 1
   alias: post
 permalink: "social/{{ post.url }}/"

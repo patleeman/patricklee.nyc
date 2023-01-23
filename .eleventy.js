@@ -48,9 +48,9 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
-  eleventyConfig.addFilter("openGraphScreenshotURL", (url) => {
+  eleventyConfig.addShortcode("openGraphScreenshotURL", function () {
     const encodedURL = encodeURIComponent(
-      `https://patricklee.nyc/social${url}`
+      `https://patricklee.nyc/social${this.page.url}`
     );
     return `https://v1.screenshot.11ty.dev/${encodedURL}/opengraph/`;
   });

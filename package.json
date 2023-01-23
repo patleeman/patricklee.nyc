@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "eleventy --serve",
+    "dev": "DEBUG=Eleventy* eleventy --serve",
     "build": "eleventy"
   },
   "devDependencies": {
