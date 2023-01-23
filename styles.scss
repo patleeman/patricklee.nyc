@@ -11,7 +11,6 @@ code {
 .content {
   blockquote {
     border-color: $green;
-    font-size: 1.5em;
     font-style: italic;
   }
 
@@ -22,6 +21,7 @@ code {
   h5,
   h6 {
     font-family: $family-serif;
+
   }
 }
 
@@ -47,15 +47,19 @@ code {
     font-size: 2em;
   }
 
-  .navbar-end {
-    font-size: 1.25em;
-  }
-
   * {
     font-family: $family-serif;
   }
+}
 
+.hero {
+  .title {
+    font-size: $size-1;
+  }
 
+  .subtitle {
+    font-size: $size-4;
+  }
 }
 
 .navbar-menu {
