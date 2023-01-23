@@ -52,7 +52,8 @@ module.exports = function (eleventyConfig) {
     const encodedURL = encodeURIComponent(
       `https://patricklee.nyc/social${this.page.url}`
     );
-    return `https://v1.screenshot.11ty.dev/${encodedURL}/opengraph/`;
+    const cacheKey = `_${new Date().valueOf()}`;
+    return `https://v1.screenshot.11ty.dev/${encodedURL}/opengraph/${cacheKey}`;
   });
 
   return {
