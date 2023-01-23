@@ -1,6 +1,6 @@
 ---
 layout: blog-category.liquid
-title: Blog Posts
+title: Writing
 pagination:
   data: collections.post
   size: 10

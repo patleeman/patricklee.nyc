@@ -20,3 +20,7 @@ I took a pretty non-traditional path to where I'm at today. I dropped out of col
 # Experience
 
 Interested in my experience? Here's my [Resume](/public/PatrickLeeResume.pdf) and [LinkedIn](https://www.linkedin.com/in/patrickleenyc/). Check out my code on [Github](https://github.com/patleeman).
+
+# This Site
+
+This site is built with [eleventy](https://www.11ty.dev/) and styled with [Bulma](https://bulma.io/). Check out it's source code on [Github](https://github.com/patleeman/patricklee.nyc). The theme is based on [Wes Bos' Cobalt 2 Theme](https://github.com/wesbos/cobalt2-vscode).

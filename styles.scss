@@ -8,31 +8,54 @@ code {
   color: $text;
 }
 
-.content blockquote,
-blockquote {
-  border-color: $green;
-  font-size: 1.5em;
-  font-style: italic;
+.content {
+  blockquote {
+    border-color: $green;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $family-serif;
+  }
 }
 
+
 .main {
+  // Kick the footer down below the page fold
   min-height: 80vh;
 }
 
 .container {
+  // Make it easier to read content.
   max-width: 800px !important;
 }
 
 /* Navbar */
 .navbar {
-  background-color: inherit;
+  // Match the content max-width
   max-width: 800px;
   margin: 0 auto;
 
   .nav-logo {
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: 2em;
   }
+
+  .navbar-end {
+    font-size: 1.25em;
+  }
+
+  * {
+    font-family: $family-serif;
+  }
+
+
 }
 
 .navbar-menu {
