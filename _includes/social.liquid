@@ -1,0 +1,62 @@
+---
+eleventyImport:
+  collections: ["post"]
+---
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #193549;
+        color: #fff;
+        display: block;
+        margin: 0;
+      }
+
+      .title {
+        font-family: 'Permanent Marker';
+        font-size: 5em;
+        max-width: 1000px;
+        max-height: 560px;
+        padding-left: 20px;
+      }
+
+      .box {
+        width: 1200px;
+        height: 630px;
+        position: relative;
+      }
+
+      .avatar {
+        border-radius: 150px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 90% 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0 20px 10px;
+      }
+
+      .url {
+        font-family: 'Permanent Marker';
+        padding-left: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 3em;
+        margin: 0 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="title">{{ post.data.title }}</h1>
+      <img src="/public/patrick-card.jpg" class="avatar" />
+      <p class="url">PatrickLee.NYC</p>
+    </div>
+  </body>
+
+
+</html>
