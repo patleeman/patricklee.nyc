@@ -31,7 +31,7 @@ If you're brand new to online controlled experimentation, I high recommend start
 
 # Books
 
-- [`Trustworthy Online Controlled Experiments : A Practical Guide to A/B Testing`](https://experimentguide.com/)
+- [Trustworthy Online Controlled Experiments : A Practical Guide to A/B Testing](https://experimentguide.com/)
 
 # Videos
 
