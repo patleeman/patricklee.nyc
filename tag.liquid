@@ -32,17 +32,4 @@ eleventyComputed:
   </tbody>
 </table>
 
-<nav
-  class="pagination is-small"
-  role="navigation"
-  aria-label="pagination">
-  {% if pagination.href.previous %}
-    <a class="pagination-previous" href="{{ pagination.href.previous }}">Newer Posts</a>
-  {% else %}
-    <span></span>
-  {% endif %}
-
-  {% if pagination.href.next %}
-    <a class="pagination-next" href="{{ pagination.href.next }}">Older Posts</a>
-  {% endif %}
-</nav>
+{% include "layouts/tag-cloud.liquid" %}
