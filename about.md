@@ -1,5 +1,6 @@
 ---
-layout: about.liquid
+layout: layouts/base.liquid
+description: Eyyy, Ohh! I'm walkin' here!
 title: About Patrick
 ---
 

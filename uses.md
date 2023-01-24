@@ -1,8 +1,7 @@
 ---
-layout: about.liquid
+layout: layouts/base.liquid
 title: Patrick Uses
 description: Let's talk shop!
-show_social_links: true
 ---
 
 ![](/public/blog/setup.png)
