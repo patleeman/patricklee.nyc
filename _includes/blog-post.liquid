@@ -19,7 +19,7 @@ layout: layouts/base.liquid
       {% for tag in tags %}
         {% if tag != 'post' %}
           <span class="tag is-info">
-            {{ tag }}
+            <a href="/tags/{{tag}}">{{ tag }}</a>
           </span>
         {% endif %}
       {% endfor %}

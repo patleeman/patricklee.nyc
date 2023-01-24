@@ -78,7 +78,7 @@ module.exports = function (eleventyConfig) {
         });
       }
     });
-    return tagsList;
+    return [...tagsList];
   });
 
   return {

@@ -4,6 +4,6 @@ title: Writing
 pagination:
   data: collections.post
   size: 10
-  alias: post
+  alias: posts
   reverse: true
 ---

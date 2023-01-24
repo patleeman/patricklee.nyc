@@ -1,4 +1,14 @@
-<h1 class="title">Posts</h1>
+---
+layout: layouts/base.liquid
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: "tags/{{ tag }}/"
+eleventyComputed:
+  title: Posts Tagged “{{ tag }}”
+---
+
 <table class="table is-fullwidth">
   <thead>
     <tr>
@@ -7,7 +17,7 @@
     </tr>
   </thead>
   <tbody>
-    {%- for post in posts -%}
+    {%- for post in collections[tag] reversed -%}
       <tr>
         <td>
           <strong>

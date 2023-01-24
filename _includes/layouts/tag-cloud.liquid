@@ -2,7 +2,7 @@
 <div class="tags">
   {% for tag in collections.tagsList %}
     <span class="tag is-info">
-      {{ tag }}
+      <a href="/tags/{{ tag }}">{{ tag }}</a>
     </span>
   {% endfor %}
 </div>

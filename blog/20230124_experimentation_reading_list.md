@@ -116,7 +116,7 @@ If you're brand new to online controlled experimentation, I high recommend start
     - Uber uses their XP to do staged rollouts.
     - On metric computation
 
-    >     The new analysis tool does not pre-compute the data of the metrics, which cut down on our data storage spend and reduced our analysis generation time. Now, when the data is ready for analysis, we use a [SQL](https://en.wikipedia.org/wiki/SQL) query file to generate metrics on the fly whenever people make a request on the WebUI. After that, we use [Scala](https://www.scala-lang.org/) as our service engine to compute the probability ([p-value](https://en.wikipedia.org/wiki/P-value)) that the treatment group mean is significantly different than the control group mean, determining if the experiment reached the target sample size.
+    > The new analysis tool does not pre-compute the data of the metrics, which cut down on our data storage spend and reduced our analysis generation time. Now, when the data is ready for analysis, we use a [SQL](https://en.wikipedia.org/wiki/SQL) query file to generate metrics on the fly whenever people make a request on the WebUI. After that, we use [Scala](https://www.scala-lang.org/) as our service engine to compute the probability ([p-value](https://en.wikipedia.org/wiki/P-value)) that the treatment group mean is significantly different than the control group mean, determining if the experiment reached the target sample size.
 
 - [In-house experimentation platforms](https://www.linkedin.com/pulse/in-house-experimentation-platforms-denise-visser/)
   - Cool list of various companies experimentation platforms.

@@ -5,7 +5,7 @@ description: Welcome!
 pagination:
   data: collections.post
   size: 4
-  alias: post
+  alias: posts
   reverse: true
 ---
 
