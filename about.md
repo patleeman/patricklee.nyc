@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.liquid
+layout: about.liquid
 title: About Patrick
 ---
 
