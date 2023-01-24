@@ -35,11 +35,11 @@ If you're brand new to online controlled experimentation, I high recommend start
 
 # Videos
 
-- [https://www.youtube.com/watch?v=qtboCGd_hTA](https://www.youtube.com/watch?v=qtboCGd_hTA)
+- [Online Controlled Experiments: Lessons from Running A/B/n Tests for 12 Years, Ron Kohavi 20151130](https://www.youtube.com/watch?v=qtboCGd_hTA)
 
 # Statistics
 
-- [https://www.youtube.com/watch?v=AJX4W3MwKzU](https://www.youtube.com/watch?v=AJX4W3MwKzU)
+- [Stanford Seminar: Peeking at A/B Tests - Why It Matters and What to Do About It](https://www.youtube.com/watch?v=AJX4W3MwKzU)
   - Notes:
     - Frequentest
       - Popular 100 years ago
