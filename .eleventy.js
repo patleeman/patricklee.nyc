@@ -1,11 +1,17 @@
 const fs = require("fs");
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 const eleventySass = require("eleventy-sass");
 
 const NOT_FOUND_PATH = "_site/404.html";
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: "https://patricklee.nyc",
+    },
+  });
   eleventyConfig.addPlugin(pluginRss);
   const eleventySassOptions = {
     compileOptions: {
@@ -46,6 +52,10 @@ module.exports = function (eleventyConfig) {
   // Shortcodes
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
+
+  eleventyConfig.addFilter("date", function (date, dateFormat) {
+    return format(date, dateFormat);
   });
 
   eleventyConfig.addShortcode("openGraphScreenshotURL", function () {
