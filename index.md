@@ -1,11 +1,6 @@
 ---
 layout: home.liquid
 title: An Introduction to Patrick
-pagination:
-  data: collections.post
-  size: 4
-  alias: posts
-  reverse: true
 ---
 
 # Hi! I'm Patrick! I...

@@ -1,10 +1,12 @@
 ---
 layout: layouts/base.liquid
+pagination:
+  data: collections.post
+  size: 4
+  alias: posts
+  reverse: true
 ---
-
 
 {{ content }}
 
-
-<h1>Recent Writing</h1>
 {% include "layouts/post-list.liquid" %}
