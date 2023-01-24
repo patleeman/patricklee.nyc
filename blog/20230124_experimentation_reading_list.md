@@ -13,7 +13,7 @@ tags:
 
 During my time on the Growth team at Noom, I've had to learn a lot about online controlled experimentation. I've put together most of the public resources I've come across into this document.
 
-If you're brand new to online controlled experimentation, I high recommend starting with [`Trustworthy Online Controlled Experiments : A Practical Guide to A/B Testing`](https://experimentguide.com/). Its a detailed guide on the experimentation landscape. It was a must-read for every member of my team, and was known as the "Experimentation Bible".
+If you're brand new to online controlled experimentation, I high recommend starting with [Trustworthy Online Controlled Experiments : A Practical Guide to A/B Testing](https://experimentguide.com/). Its a detailed guide on the experimentation landscape. It was a must-read for every member of my team, and was known as the "Experimentation Bible".
 
 # Whitepapers
 
