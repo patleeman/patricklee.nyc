@@ -1,7 +1,6 @@
 ---
 layout: home.liquid
 title: An Introduction to Patrick
-description: Welcome!
 pagination:
   data: collections.post
   size: 4
