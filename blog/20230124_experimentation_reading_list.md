@@ -17,13 +17,13 @@ If you're brand new to online controlled experimentation, I high recommend start
 
 # Whitepapers
 
-- Overlapping Experiment Infrastructure: More, Better, Faster Experimentation [36500.pdf](36500.pdf)
-- Online Controlled Experiments at Large Scale [2013 controlledExperimentsAtScale.pdf](2013_controlledExperimentsAtScale.pdf)
-- Controlled experiments on the web: survey and practical guide [controlledExperimentDMKD.pdf](controlledExperimentDMKD.pdf)
-- Democratizing online controlled experiments at [Booking.com](http://booking.com/)[1710.08217.pdf](1710.08217.pdf)
-- Seven Rules of Thumb for Web Site Experimenters[2014 experimentersRulesOfThumb.pdf](2014_experimentersRulesOfThumb.pdf)
-- SQR: Balancing Speed, Qality and Risk in Online Experiments[1801.08532.pdf](1801.08532.pdf)
-- Growth Book Stats Whitepaper[GrowthBookStatsWhitepaper-2021 (1).pdf](<GrowthBookStatsWhitepaper-2021_(1).pdf>)
+- [Overlapping Experiment Infrastructure: More, Better, Faster Experimentation](https://research.google/pubs/pub36500/)
+- [Online Controlled Experiments at Large Scale](https://exp-platform.com/large-scale/)
+- [Controlled experiments on the web: survey and practical guide](https://ai.stanford.edu/~ronnyk/2009controlledExperimentsOnTheWebSurvey.pdf)
+- [Democratizing online controlled experiments at Booking.com](https://arxiv.org/abs/1710.08217)
+- [Seven Rules of Thumb for Web Site Experimenters](https://www.exp-platform.com/Documents/2014%20experimentersRulesOfThumb.pdf)
+- [SQR: Balancing Speed, Quality and Risk in Online Experiments](https://arxiv.org/abs/1801.08532)
+- [Growth Book Stats Whitepaper](/public/blog/20230124_experimentation_reading_list.md/GrowthBookStatsWhitepaper-2021.pdf)
 - [Success Stories from a Democratized Experimentation Platform](https://arxiv.org/abs/2012.10403#)
   - Notes:
     - Netflix experimentation platform
