@@ -1,7 +1,6 @@
 ---
-layout: home.liquid
+layout: layouts/base.liquid
 title: An Introduction to Patrick
-description: Welcome!
 pagination:
   data: collections.post
   size: 4
@@ -27,3 +26,5 @@ pagination:
 - Learn more [about me](/about)
 - See [what I use](/uses)
 - Connect with me [on LinkedIn](https://www.linkedin.com/in/patrickleenyc/)
+
+{% include "layouts/post-list.liquid" %}
