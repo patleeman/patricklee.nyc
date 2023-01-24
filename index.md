@@ -1,14 +1,13 @@
 ---
 layout: home.liquid
 title: An Introduction to Patrick
+description: Welcome!
 pagination:
   data: collections.post
   size: 4
   alias: post
   reverse: true
 ---
-
-# Welcome!
 
 # Hi! I'm Patrick! I...
 
@@ -22,7 +21,7 @@ pagination:
 - [dropped out of college once and ended up graduating from Columbia](/blog/from-community-college-to-columbia/)
 - enjoy growth hacking startups
 
-# Give me more
+# Learn more
 
 - Check out some of my [writing](/blog)
 - Learn more [about me](/about)

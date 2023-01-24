@@ -66,6 +66,21 @@ module.exports = function (eleventyConfig) {
     return `https://v1.screenshot.11ty.dev/${encodedURL}/opengraph/${cacheKey}`;
   });
 
+  eleventyConfig.addCollection("tagsList", function (collectionApi) {
+    const tagsList = new Set();
+    collectionApi.getAll().map((item) => {
+      if (item.data.tags) {
+        // handle pages that don't have tags
+        item.data.tags.forEach((tag) => {
+          if (tag !== "post") {
+            tagsList.add(tag);
+          }
+        });
+      }
+    });
+    return tagsList;
+  });
+
   return {
     templateFormats: ["md", "html", "liquid", "njk"],
     dir: {
