@@ -5,10 +5,11 @@ pagination:
   size: 1
   alias: tag
 permalink: "tags/{{ tag }}/"
-eleventyComputed:
-  title: Posts Tagged “{{ tag }}”
 ---
 
+{% include "layouts/tag-cloud.liquid" %}
+
+<h1>Posts Tagged “{{ tag }}”</h1>
 <table class="table is-fullwidth">
   <thead>
     <tr>
@@ -31,5 +32,3 @@ eleventyComputed:
     {%- endfor -%}
   </tbody>
 </table>
-
-{% include "layouts/tag-cloud.liquid" %}
