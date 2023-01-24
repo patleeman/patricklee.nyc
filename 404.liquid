@@ -1,0 +1,48 @@
+---
+permalink: 404.html
+---
+<html lang="en">
+  {% include "layouts/header.liquid" %}
+
+  <body>
+    {% include "layouts/nav.liquid" %}
+    <style>
+      .on-fire {
+        background-image: url('https://media.giphy.com/media/Z1BTGhofioRxK/giphy.gif');
+        background-position: center;
+      }
+
+      .container-404 {
+        display: flex;
+        min-height: 60vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .centered-404 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #193549;
+        padding: 2rem;
+      }
+    </style>
+
+    <section class="section main on-fire">
+      <div class="container container-404">
+        <div class="content centered-404">
+          <h1>Page Not Found</h1>
+          <p class="centered">Whoops! This page doesn't exist!</p>
+          <p>
+            <a href="/">This is fine.</a>
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    {% include "layouts/footer.liquid" %}
+
+    {% include "layouts/scripts.liquid" %}
+  </body>
+</html>
