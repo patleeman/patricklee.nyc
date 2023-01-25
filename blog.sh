@@ -23,7 +23,7 @@ function new {
 
     frontmatter="---
 layout: blog-post.liquid
-title: $1
+title: ${1}
 description:
 date: $date
 permalink: \"blog/{{ title | slugify }}/index.html\"
