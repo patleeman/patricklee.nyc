@@ -38,7 +38,7 @@ I understand onboarding is a pretty daunting time. There is a lot of new things 
 
 Regular 1:1s are important for us to stay in touch and to ensure there is an open and available space for us to talk. My preference is weekly or bi-weekly, but I'll defer to you on the cadence.
 
-You own the agenda for the 1:1s. I'll bring topics, but I'm expecting you to bring topics to discuss as well, and your topics will usually be prioritized above my topics. It's a good idea to spend a few minutes before our 1:1 to jot down some notes in our shared 1:1 document.
+You own the agenda for the 1:1s. I'll bring topics, but I'm expecting you to bring topics to discuss as well, and your topics will usually be prioritized above my topics. It's a good idea to spend a few minutes before our 1:1 to jot down some notes in our shared 1:1 document. This shared document is a great place to drop non-urgent questions or thoughts between meetings so you'll populate the agenda as you progress through the week.
 
 Some things we can discuss in your 1:1:
 
@@ -77,6 +77,8 @@ Help me help you. I may or may not have a view of what you do on a day-to-day ba
 A brag doc or work log is a simple list of the things you work on so I can take that and transform that into a performance review or promotion packet.
 
 By updating it at a regular interval, you don't need to do the "what did I work on a month ago or more" dance. Take a minute or two every week to just jot down what you've been working on and when performance review season comes around, you don't have to do anything!
+
+Having a running work log/brag doc is also useful when it comes time to update your resume. You'll have a full accounting of your work that you can easily pull highlights from.
 
 ## Promotions
 
