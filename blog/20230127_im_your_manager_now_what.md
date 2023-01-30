@@ -61,12 +61,13 @@ Some things we can discuss in your 1:1:
 - Do you want to vent about something? Go ahead, it's a safe space and between us.
 - Tell me how you're feeling. Is everything going well outside work? Have you been distracted lately? Is there anything I can do to help (time off, too much work on your plate, etc.)?
 - Need advice? I can do my best to help guide you through whatever it is you're going through.
+- Are you happy in your role? If there is something you feel is missing, let me know so we can work on it.
 
-For direct reports that are also managers:
+For my direct reports that are also managers:
 
 - How is your team doing? Are you encountering any issues with your direct reports?
 - What is your team working on?
-- Do you have any situations where I could provide guidance?
+- Do you have any situations with your reports where I could provide guidance?
 
 **You don't need to wait until our 1:1 though. Feel free to schedule time with me or ping me on slack at any time.**
 
