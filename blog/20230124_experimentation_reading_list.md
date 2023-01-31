@@ -123,4 +123,4 @@ If you're brand new to online controlled experimentation, I high recommend start
 - [ExPlat: Automattic's Experimentation Platform](https://data.blog/2021/03/16/explat-automattics-experimentation-platform/)
   - Notes:
     - System is called Abacus
-    - [Open source](<[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjk5IWj04b0AhWBpnIEHZu0AOoQFnoECAUQAQ&url=https%3A%2F%2Fgithub.com%2FAutomattic%2Fabacus&usg=AOvVaw0Z4geVG-mMz1vxvOSMB15A](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjk5IWj04b0AhWBpnIEHZu0AOoQFnoECAUQAQ&url=https%3A%2F%2Fgithub.com%2FAutomattic%2Fabacus&usg=AOvVaw0Z4geVG-mMz1vxvOSMB15A)>)
+    - [Open source](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjk5IWj04b0AhWBpnIEHZu0AOoQFnoECAUQAQ&url=https%3A%2F%2Fgithub.com%2FAutomattic%2Fabacus&usg=AOvVaw0Z4geVG-mMz1vxvOSMB15A)
