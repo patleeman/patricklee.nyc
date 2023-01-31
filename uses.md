@@ -4,11 +4,11 @@ title: Patrick Uses
 description: Let's talk shop!
 ---
 
-![](/public/blog/setup.png)
+![My desk setup](/public/blog/setup.png)
 
 I'm a fan of [Wes Bos' `/uses`](https://wesbos.com/uses) page. Who doesn't love showing off their battle station?
 
-# Development Tools
+## Development Tools
 
 - I use [Visual Studio Code](https://code.visualstudio.com/) as my text editor.
 - [Wes Bos' Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2) theme is hands-down my favorite theme for everything.
@@ -18,7 +18,7 @@ I'm a fan of [Wes Bos' `/uses`](https://wesbos.com/uses) page. Who doesn't love 
 - On linux I use [bash-it](https://github.com/Bash-it/bash-it) with a pretty [generic config](https://github.com/patleeman/dotfiles/blob/master/configs/bash_it.bash) as well.
 - I manage all my dotfiles and new machine setup scripts in my [dotfiles](https://github.com/patleeman/dotfiles/tree/master/configs) repo.
 
-# Apps
+## Apps
 
 - I love [Obsidian.md](https://obsidian.md/) for note-taking and task management.
 - [In Your Face](https://www.inyourface.app/) is an app I couldn't live without. It blocks your screen when you have a meeting with a big modal. I haven't missed or been late to a meeting since I got it.
@@ -28,7 +28,7 @@ I'm a fan of [Wes Bos' `/uses`](https://wesbos.com/uses) page. Who doesn't love 
 - For Calendar & Email I use [Fastmail](https://www.fastmail.com/).
 - [1 Password](https://1password.com/) for password management.
 
-# Desk Setup
+## Desk Setup
 
 - My desk is a [L-Shaped Standing Desk from Uplift Desk](https://www.upliftdesk.com/)
 - I sit on a [Herman Miller Aeron](https://www.hermanmiller.com/products/seating/office-chairs/aeron-chairs/) I got off craigslist for cheap.

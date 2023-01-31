@@ -8,7 +8,7 @@ tags:
   - management
 ---
 
-# Striving for dispassionateness
+## Striving for dispassionateness
 
 > Not influenced by strong feelings or emotions; impartial
 
@@ -22,21 +22,21 @@ I'm an emotional person, I feel strong emotions which can bias my decision makin
 
 Disconnecting yourself from emotions isn't burying your emotions. Its a process of introspection and learning what your current emotional state is, and either working to return to my baseline state, or removing myself from the situation. A few things that I've learned:
 
-# Understanding what affects my mood
+## Understanding what affects my mood
 
 - If I'm hungry or if I didn't get enough sleep, I'll often become irritable.
 - When I exercise regularly in the mornings, I set myself up to be in a better head space.
 - I burn out if I don't take vacations often or there are other compounding stressors. How close to burnout is important for me to keep tabs on. The closer I am, the more erratic my behavior will be and the less passionate I will be about work.
 - As it gets closer to the end of the day, I get tired and can more easily get irritable.
 
-# Understanding when to stop and take a breather
+## Understanding when to stop and take a breather
 
 Sometimes people send me a message or email that spike my blood pressure. I've found that if something triggers me, taking a step back to think about it or let it bake helps a lot. I've found a lot of success putting something down, then picking it up again the next morning when I'm fresh and in a better head space. The scope of problems tend to be smaller the farther you get from it and initial reactions are usually overblown.
 
-# Understanding when to dig in
+## Understanding when to dig in
 
 Speaking of initial reactions, one of my flaws is overreacting based on my initial reaction. Its easy to do so, but generally taking some time to investigate and dig in before gauging the severity of it is beneficial and something I actively work on. Its very easy to experience something, scream "WHAT?", go on a tear and make things works. It takes discipline and detachment to stop, investigate, and ask questions, then thoughtfully determine the impact and next steps.
 
-# Understanding when to let things fall by the wayside.
+## Understanding when to let things fall by the wayside.
 
 If you're doing a good job, people are going to want you to do more. Knowing when to let things fall by the wayside (which is different from letting things slip through the cracks) is an invaluable skill.

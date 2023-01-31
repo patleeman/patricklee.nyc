@@ -4,7 +4,7 @@
 
   <!-- Primary Meta Tags -->
   <title>Patrick Lee | {{ title }}</title>
-  <meta name="description" content="{{ description }}">
+  <meta name="description" content="{% if description %}{{ description }}{% else %}Patrick Lee, software engineer, engineering manager, and all around cool dude{% endif %}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://patricklee.nyc{{ page.url  }}">
   <meta property="twitter:title" content="Patrick Lee | {{ title }}">
-  <meta property="twitter:description" content="{% if description %}{{ description }}{% else %}I get into things{% endif %}">
+  <meta property="twitter:description" content="{% if description %}{{ description }}{% else %}Patrick Lee, software engineer, engineering manager, and all around cool dude{% endif %}">
   <meta property="twitter:image" content="{% openGraphScreenshotURL %}">
 
   <link rel="canonical" href="https://patricklee.nyc" />

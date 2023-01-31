@@ -8,7 +8,7 @@ tags:
   - knowledge-management
 ---
 
-# Note taking hell
+## Note taking hell
 
 I have a hard time sticking with a note taking system. I think at this point I've tested all the major note taking tools:
 

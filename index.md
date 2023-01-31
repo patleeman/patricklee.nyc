@@ -3,7 +3,7 @@ layout: home.liquid
 title: An Introduction to Patrick
 ---
 
-# Hi! I'm Patrick! I...
+## Hi! I'm Patrick! I...
 
 - grew up in Canarsie, Brooklyn
 - live in White Plains, New York
@@ -15,7 +15,7 @@ title: An Introduction to Patrick
 - [dropped out of college once and ended up graduating from Columbia](/blog/from-community-college-to-columbia/)
 - enjoy growth hacking startups
 
-# Learn more
+## Learn more
 
 - Check out some of my [writing](/blog)
 - Learn more [about me](/about)

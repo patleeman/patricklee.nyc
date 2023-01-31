@@ -12,11 +12,11 @@ Over the course of 2020 and 2021 I've become increasingly sedentary with lockdow
 
 I've seen treadmill desks before and was motivated after seeing one of my coworkers on one during a meeting. So I decided to pick up a treadmill and give it a shot.
 
-![](/public/blog/20211228_my_walking_desk_setup.md/1.png)
+![The full walking desk setup](/public/blog/20211228_my_walking_desk_setup.md/1.png)
 
 _This is my humble treadmill desk._
 
-# The treadmill
+## The treadmill
 
 There are a lot of treadmills on the market of varying quality. I knew that I didn't need a high end treadmill since I was only going to walk on it. Space is an issue, so I wanted something that could fold away if I had company and needed to use my office as a guest room. Finally I wanted to make sure the product had a warranty and a presence in the US in case something happened with the product. There are plenty of dodgy looking walking treadmills on Amazon and I just didn't want to take the chance of getting a piece of junk.
 
@@ -37,13 +37,13 @@ While the LifeSpan TR1200 was a more solid choice, I decided to go with the smal
 
 Overall I'm pretty happy with this treadmill!
 
-# The setup
+## The setup
 
 I have a standing desk which I had planned on using as my treadmill desk. The plan was to set up the treadmill in the morning then move it out of the way when I was finished so I could sit/stand the rest of the day. I tried this a few days and realized that I needed to have a dedicated setup for the treadmill desk and that it had to live somewhere semi-permanently. Having to set up the treadmill attributed some friction to actually using it which meant I was less likely to use it.
 
 So I cleared some space in my office, purchased a relatively cheap [Tangkula adjustable standing desk](https://www.amazon.com/dp/B093GLT2QY?psc=1&ref=ppx_yo2_dt_b_product_details) off of Amazon and repurposed some extra peripherals I had laying around. I also purchased a Logitech C920x webcam for this setup so I could take video calls while on the treadmill desk.
 
-![](/public/blog/20211228_my_walking_desk_setup.md/2.png)
+![The desk setup](/public/blog/20211228_my_walking_desk_setup.md/2.png)
 
 _On the desk: Split Keyboard, Apple Trackpad, wrist rests, Logitech C920x, LG 34" Ultrawide monitor, Ergotron monitor arm, Treadly 2 remote_
 
@@ -51,11 +51,11 @@ When everything came, I realized that the standing desk needed to raised over th
 
 I also have a small fan that blows me while I'm walking since I get pretty warm after walking a while. The fan helps a lot.
 
-![](/public/blog/20211228_my_walking_desk_setup.md/3.png)
+![Treadmill and cooling fan](/public/blog/20211228_my_walking_desk_setup.md/3.png)
 
 _The desk is raised over the treadmill with the bed risers and the fan helps keep me cool while I walk._
 
-# Using it
+## Using it
 
 My goal is 10,000 steps per day and I've found that I'm able to complete that in about three hours at a leisurely 2.1 MPH pace. The first few weeks I was pretty tired and didn't walk every day. It does take a period of acclimation to go from mostly sedentary to walking the equivalent of 2-3 miles a day so I wasn't kicking myself for not hitting my goal. Ultimately I want to build a long lasting healthy habit so I'm taking it slow and working up to my goal.
 
@@ -67,7 +67,7 @@ Some of my impressions after several weeks of daily usage:
 - I'm constantly drinking water while walking, no spills yet! Haven't tried drinking hot coffee yet, though I might just skip that.
 - I keep a pair of shorts, socks and my walking shoes next to the treadmill so I have no excuses to not walk.
 
-# Conclusion
+## Conclusion
 
 I'm really enjoying my walking desk. I'm getting in physical activity where I'd otherwise be sitting at my desk. My work is getting done and I'm able to optimize my time outside work for other things I enjoy doing (like hanging out with my family)!
 

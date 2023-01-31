@@ -8,7 +8,7 @@ tags:
   - programming
 ---
 
-# The good ole days
+## The good ole days
 
 > **Update (2023-01-21): I've migrated this blog to [eleventy](https://www.11ty.dev/) and use its built in RSS/Atom feed generator now.**
 
@@ -24,7 +24,7 @@ Today I set up a RSS reader ([NetNewsWire](https://netnewswire.com/))and I'm goi
 
 Subscribe to this blog's [feed](https://patricklee.nyc/rss.xml).
 
-# Aside: Adding a RSS feed to this blog
+## Aside: Adding a RSS feed to this blog
 
 Since I decided to go ahead and re-invent the wheel for this personal blog and build my own Pandoc powered static site generator, I needed a way to generate RSS feeds.
 

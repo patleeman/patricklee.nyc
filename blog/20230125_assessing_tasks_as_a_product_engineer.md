@@ -13,7 +13,7 @@ tags:
 
 A good [product-minded engineer](https://blog.pragmaticengineer.com/the-product-minded-engineer/) is worth their weight in gold. One critical skill these engineers have is the ability to look at the business and understand why they are asking you to build what you're building. Then figure out if what is asked of you will achieve the intended goals.
 
-# Understanding the business
+## Understanding the business
 
 First, if you don't understand how your business makes money (or intends on making money), and how your role and team fit into that equation, then you need to stop whatever you're doing and figure this out. Businesses are in the... business... of making money. Everything else is window dressing.
 
@@ -21,7 +21,7 @@ Second, you need to understand the priorities of the business. What does the bus
 
 Third, you need to understand the tempo of the business. Is it wartime or peacetime? Is it business as usual or is everything on fire? If your company has good leadership, they will flat out tell you. Otherwise, it's usually intuitive. However, you'd be surprised how many people are oblivious to their environment, only looking up to discover everything is on fire. Tempo dictates your work, and how you produce it. It can also be a proxy for how the company is doing. The big-brained move is to fully understand your company's financial position (as well as how to assess it) and use that to understand what the tempo _should_ be.
 
-# Time and complexity tradeoffs
+## Time and complexity tradeoffs
 
 > When approaching a task, there is usually an optimal solution and a hacky-as-hell-yuck-this-is-bad-don't-do-this-why-would-you-do-this-please-stop solution.
 

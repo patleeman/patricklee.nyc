@@ -8,7 +8,7 @@ tags:
   - programming
 ---
 
-# Introduction
+## Introduction
 
 I'm in the process of rebuilding this website using [eleventy](https://www.11ty.dev/) and I wanted to get fancy with this revamped site.
 
@@ -16,7 +16,7 @@ One feature I wanted was a custom Open Graph social share image for each page on
 
 Eleventy has a pretty robust ecosystem already and lo and behold, there are already plugins to handle this for you. Great, let's just check them out.
 
-# What's out there?
+## What's out there?
 
 [eleventy-plugin-social-img](https://github.com/tannerdolby/eleventy-plugin-social-img#readme) pre-generates cards using a shortcode. I spent about 30 minutes trying to grok the readme and how to use the plugin. I like that you could create an HTML template, but the plugin looked overly complicated for what I needed.
 
@@ -28,7 +28,7 @@ Eleventy has a pretty robust ecosystem already and lo and behold, there are alre
 
 All in all, I wasn't a huge fan of these solutions. There had to be something simpler.
 
-# Something simpler
+## Something simpler
 
 The eleventy team offers various [API Services](https://www.11ty.dev/docs/api-services/) for the public to use. [Screenshots](https://www.11ty.dev/docs/services/screenshots/) is a runtime service that takes a screenshot of a URL and returns that image (and caches it). Bingo!
 
@@ -105,7 +105,7 @@ Then I updated my header to use this shortcode under the `og:image` and `twitter
 
 That's all it takes!
 
-# Conclusion
+## Conclusion
 
 The risk here is if the eleventy team decides to sunset the screenshot API, I'll need to switch to a solution that pre-generates the social share images or host the API myself. Considering how little traffic this site gets, I'll take that risk for reduced complexity now.
 

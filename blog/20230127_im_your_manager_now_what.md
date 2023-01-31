@@ -9,13 +9,13 @@ tags:
   - management
 ---
 
-# Introduction
+## Introduction
 
 After a recent reorganization at my company, I'm taking this opportunity to start fresh with how I approach my relationship with my direct reports. I've found that my instructions to my reports are often handed down piecemeal, expectations aren't set, or I've just forgotten things I should be doing. That is not a great experience as a direct report.
 
 This document is really meant to keep me accountable as your manager. It's here, so you understand what I can do for you and what I expect from you. I'll refine this document as I go, and if there is anything in here you disagree with, please let me know!
 
-# My general philosophy towards management
+## My general philosophy towards management
 
 My overall philosophy can be summed in my blog post: [The Grug Brained Manager](/blog/the-grug-brained-manager/). Don't feel like you have to read it unless you want to get a deeper understanding of my management philosophy. In a nutshell:
 
@@ -24,7 +24,7 @@ My overall philosophy can be summed in my blog post: [The Grug Brained Manager](
 3. **I trust you.** By default, I will trust you to do your job to the best of your ability. I will also trust you to tell me if you need help, and I will do everything in my power to help you. Remember that trust is easy to break and difficult to repair, so I ask you to level with me whenever possible, and I will try to do the same.
 4. **Feedback is hard.** I will do my best to give you feedback with empathy and kindness, and work with you if there is something you can work on.
 
-# Expectations
+## Expectations
 
 ## Onboarding
 
@@ -125,7 +125,7 @@ I generally expect your work to be mostly bug free, conform to existing standard
 
 The most important thing is showing enthusiasm for your work, working well with your team, and treating everybody with kindness and respect. Being good at your job doesn't mean being a brilliant jerk, it means being somebody people trust and respect to get the job done.
 
-# Conclusion
+## Conclusion
 
 I hope this post was able to help form a basis for our working relationship as manager / direct report. I want to make sure you have the full information to ensure you're meeting my expectations, and I want to make sure my expectations are clearly spelled out without any ambiguity.
 

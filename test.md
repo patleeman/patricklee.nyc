@@ -4,7 +4,7 @@ title: "Test Page"
 description: "Test Description: a way to add more context"
 ---
 
-# Markdown: Syntax
+## Markdown: Syntax
 
 - [Markdown: Syntax](#markdown-syntax)
   - [Overview](#overview)

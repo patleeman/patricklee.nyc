@@ -8,9 +8,9 @@ tags:
   - management
 ---
 
-# The Grug Brained Manager
+## The Grug Brained Manager
 
-![](/public/blog/20220823_the_grug_brained_manager.md/grug.png)
+![AI generated caveman wearing a tie](/public/blog/20220823_the_grug_brained_manager.md/grug.png)
 
 this collection of thoughts on managing software development teams by a grug brained manager based on [grug brained developer](https://grugbrain.dev/).
 
@@ -20,7 +20,7 @@ grug pretend grug know what do. grug talk to other grug managers and realize nob
 
 over time grug learn painful lesson after painful lesson and decide to write on stone tablet so young grug manager not make same mistake.
 
-# Managing People Is Hard
+## Managing People Is Hard
 
 nobody told grug managing so hard. grug used to be okay grug brained developer.
 
@@ -52,7 +52,7 @@ grug has skill other developer may not have. grug good at writing on stone table
 
 grug want young grug to think hard when want to try management. management not the right career path for all grug, but hard to know unless young grug try it.
 
-# Rule #1: No Surprises
+## Rule #1: No Surprises
 
 grug learn over time that number one rule is **no surprises**. surprises bad. surprises very bad if it affects shiny rocks grug’s team takes home. breaking this rule can lead to very bad consequences like difficult conversations or a club over grug’s head.
 
@@ -66,7 +66,7 @@ grug learn hard way that sometimes grug avoid hard conversation because it make 
 
 other time grug not know what expectations should be for grug developer. company leadership failed grug by not teaching grug how to be manager, but that not good excuse. grug learn many painful leadership due to grug’s lack of experience and support.
 
-# Feedback
+## Feedback
 
 ## Getting feedback for reports
 
@@ -98,7 +98,7 @@ grug realize at end of the day, giving feedback to report like ripping off band 
 
 over time, after grug do it more, giving feedback not as scary, but still hard.
 
-# Managers should stay technical
+## Managers should stay technical
 
 grug firmly believe that managers that are close to developers should make time to work with the technology.
 
@@ -112,7 +112,7 @@ grug mostly spend available time working on small problems that help the team’
 
 grug believes that in order to lead people, grug needs to stay grounded to what life is like for them.
 
-# Hiring & Firing
+## Hiring & Firing
 
 ## Hiring
 
@@ -136,7 +136,7 @@ however, sometimes there is a communication issue or misaligned expectations. gr
 
 sometimes you give people many chances and they still don’t meet grug’s expectations, so grug then needs to make the hard decision to fire them.
 
-# Processes
+## Processes
 
 grug once hear phrase “process is just expectations made explicit” and grug very much like this.
 
@@ -146,7 +146,7 @@ process can slow people down. grug hear from other grug often that they need to 
 
 process should be challenged from time to time. grug thinks that just because a process exists, doesn’t make it law. processes need to be re-evaluated to make sure they are still beneficial.
 
-# Keeping it simple
+## Keeping it simple
 
 grug learn long ago during software development days that complexity is the external enemy. grug internalized this and tries to reduce complexity as much as possible.
 
@@ -156,7 +156,7 @@ grug firmly believe that the right amount of code is 0 lines. grug wants to judi
 
 when making technical decisions, grug considers who will be working on it. code should be accessible to even the most junior developer. writing code should be simple and obvious.
 
-# Leadership
+## Leadership
 
 grug had vision of leadership from movies where heroic leader charges enemy lines from the front. the reality of leadership though is that grug goes around making sure team is not blocked by anything, they like what they are working on and are happy, and that the team has what they need to do their jobs.
 
@@ -168,7 +168,7 @@ grug also believes that decisions should be made with empathy, that there is an 
 
 at the end of the day, grug just try to do good job as best as grug can. grug realize that there no true ideal for what a leader is. grug just try to do what is best for team members and company and try to hold together as much of the team as possible.
 
-# Communication
+## Communication
 
 communication number one thing to get right as manager.
 
@@ -186,14 +186,14 @@ grug know that when manager suggest thing, it easy for people to take it as mand
 
 grug try to use simple language whenever possible. grug has many English as second language team members and wants to make sure they can understand grug.
 
-![](/public/blog/20220823_the_grug_brained_manager.md/whywastetime.gif)
+![Kevin from The Office saying why waste time?](/public/blog/20220823_the_grug_brained_manager.md/whywastetime.gif)
 
-# Grug like
+## Grug like
 
 - [The Manager's Path by Camille Fournier](https://www.goodreads.com/book/show/33369254-the-manager-s-path)
 - [Career Development: What It Really Means to be a Manager, Director, or VP](https://kellblog.com/2015/03/08/career-development-what-it-really-means-to-be-a-manager-director-or-vp/)
 - [Advice for Engineering Managers Who Want to Climb the Ladder](https://charity.wtf/2022/06/13/advice-for-engineering-managers-who-want-to-climb-the-ladder/)
 
-# Conclusion
+## Conclusion
 
 grug think that key to management is to communicate expectations clearly and set up team to meet those expectations.

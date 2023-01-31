@@ -9,13 +9,13 @@ tags:
   - experimentation
 ---
 
-# Introduction
+## Introduction
 
 During my time on the Growth team at Noom, I've had to learn a lot about online controlled experimentation. I've put together most of the public resources I've come across into this document.
 
 If you're brand new to online controlled experimentation, I high recommend starting with [Trustworthy Online Controlled Experiments : A Practical Guide to A/B Testing](https://experimentguide.com/). Its a detailed guide on the experimentation landscape. It was a must-read for every member of my team, and was known as the "Experimentation Bible".
 
-# Whitepapers
+## Whitepapers
 
 - [Overlapping Experiment Infrastructure: More, Better, Faster Experimentation](https://research.google/pubs/pub36500/)
 - [Online Controlled Experiments at Large Scale](https://exp-platform.com/large-scale/)
@@ -29,15 +29,15 @@ If you're brand new to online controlled experimentation, I high recommend start
     - Netflix experimentation platform
     - Interesting: Netflix uses R/Python notebooks so people can contribute reports, statistical methodologies, and metrics.
 
-# Books
+## Books
 
 - [Trustworthy Online Controlled Experiments : A Practical Guide to A/B Testing](https://experimentguide.com/)
 
-# Videos
+## Videos
 
 - [Online Controlled Experiments: Lessons from Running A/B/n Tests for 12 Years, Ron Kohavi 20151130](https://www.youtube.com/watch?v=qtboCGd_hTA)
 
-# Statistics
+## Statistics
 
 - [Stanford Seminar: Peeking at A/B Tests - Why It Matters and What to Do About It](https://www.youtube.com/watch?v=AJX4W3MwKzU)
   - Notes:

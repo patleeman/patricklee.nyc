@@ -1,8 +1,8 @@
-# Patricklee.nyc
+## Patricklee.nyc
 
 This is my personal website https://patricklee.nyc using [eleventy](https://www.11ty.dev).
 
-# Quickstart
+## Quickstart
 
 Build the site.
 
