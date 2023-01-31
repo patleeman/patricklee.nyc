@@ -82,7 +82,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    templateFormats: ["md", "html", "liquid", "njk"],
+    templateFormats: ["md", "html", "liquid", "njk", "txt"],
     dir: {
       input: ".",
       includes: "_includes",
