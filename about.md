@@ -5,7 +5,7 @@ title: About Patrick
 ---
 
 <div style="display:flex;justify-content:center;">
-    <img style="border-radius:12px" src="/public/patrick-card.jpg" />
+    <img style="border-radius:12px" alt="It's a me, Patrick!" src="/public/patrick-card.jpg" />
 </div>
 
 ## About

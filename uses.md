@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.liquid
 title: Patrick Uses
-description: Let's talk shop!
+description: Learn more about my work setup
 ---
 
 ![My desk setup](/public/blog/setup.png)
