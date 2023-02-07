@@ -10,6 +10,8 @@ tags:
 
 ## Note taking hell
 
+Update(Feb 7, 2023): I've written down how [I'm currently using Obsidian](/blog/how-i-use-obsidian)
+
 I have a hard time sticking with a note taking system. I think at this point I've tested all the major note taking tools:
 
 - Evernote
@@ -73,3 +75,5 @@ I need to pick several tools and keep them in their lanes:
 5. Bookmarking: Raindrop.io
 
 I think leveraging a tool like raindrop.io will help me keep all these various notes organized in a central location... at least until I get bored of maintaining it...
+
+Update(Feb 7, 2023): I've written down how [I'm currently using Obsidian](/blog/how-i-use-obsidian)
