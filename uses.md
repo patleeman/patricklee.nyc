@@ -27,6 +27,7 @@ I'm a fan of [Wes Bos' `/uses`](https://wesbos.com/uses) page. Who doesn't love 
 - I use Dropbox for file storage after de-googling my life.
 - For Calendar & Email I use [Fastmail](https://www.fastmail.com/).
 - [1 Password](https://1password.com/) for password management.
+- [Raycast](https://www.raycast.com/) is a new spotlight replacement I've been playing with. Its very similar to [Alfred](https://www.alfredapp.com/) but more modern.
 
 ## Desk Setup
 
