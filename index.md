@@ -5,15 +5,14 @@ title: An Introduction to Patrick
 
 ## Hi! I'm Patrick! I...
 
-- grew up in Canarsie, Brooklyn
 - live in White Plains, New York
+- grew up in Canarsie, Brooklyn
 - am a father and husband
-- work as a software engineer and [engineering manager](/blog/the-grug-brained-manager/)
+- am employed as a software engineer
+- have been previously empled as an [engineering manager](/blog/the-grug-brained-manager/)
 - [am a productivity tool nerd](/blog/note-taking-hell/)
-- am learning how to cook with a 160,000 BTU wok burner
-- love to bbq with my Weber grill and Traeger smoker
-- [dropped out of college once and ended up graduating from Columbia](/blog/from-community-college-to-columbia/)
-- enjoy growth hacking startups
+- enjoy outdoor cooking (weber charcoal grill, trager smoker, 160,000 BTU wok burner)
+- [dropped out of college once and ended up in the Ivy League](/blog/from-community-college-to-columbia/)
 
 ## Learn more
 
