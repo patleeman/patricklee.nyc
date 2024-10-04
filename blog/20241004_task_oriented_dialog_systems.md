@@ -25,7 +25,7 @@ From what I've gathered, the approach we used is a subset of NLP known as Task-O
 
 From my understanding, a TOD:
 
-- Is a conversational system that helps users **do** something (achieve a goal).
+- Is a *conversational system* that helps users **do** something (achieve a goal).
 - Interprets the user's intent through baked-in assumptions or through workflows to disambiguate requests.
 - Manages the conversation state and has logic to complete workflows (to achieve a goal).
 
@@ -35,10 +35,11 @@ In a nutshell, it's a system that interprets a user's intent (their utterance), 
 
 ## What's an example?
 
-Take, for example, a voice assistant like Amazon's Alexa or Apple's Siri. A user may provide the following utterance:
+Take, for example, an assistant like [Amazon's Alexa](https://www.amazon.science/blog/new-alexa-research-on-task-oriented-dialogue-systems) or Apple's Siri. A user may provide the following utterance:
 
-User: Siri, what's the weather today?
-Assistant: The weather today in New York is 74 degrees Fahrenheit. 
+**User:** Siri, what's the weather today?
+
+**Assistant:** The weather today in New York is 74 degrees Fahrenheit. 
 
 How does the system go from the user asking what the weather is to it responding with the weather? This Task-Oriented Dialog system requires several major components:
 
@@ -71,14 +72,6 @@ That's a lot of different systems for a relatively "simple" request!
 ## Why aren't they more popular?
 
 This is a question I've asked myself time and time again over the last year. The approach is fairly solid, and with large language models, NLP is so much easier than it used to be. So why isn't it more popular?
-
-First, let's look at what is popular.
-
-### Alternative: Function Calling / Tool Use
-
-For those of us coming into the NLP and TOD space from the outside, we encounter [function calling](https://platform.openai.com/docs/guides/function-calling) or tool use. Function calling is a popular feature implemented in many large LLM services that allow LLMs to "use tools" or reach out to external APIs or to call code.
-
-These are good tools if you're using an LLM as a conversational partner and to enable the LLM to achieve more, but for a TOD system, function calling requires embedding all your business logic into LLM prompts. Ultimately, this means less controllability of a highly non-deterministic system, and ultimately decision-making is left to the LLM. Letting an LLM control your business logic is **not good**! You want full control and accountability of your system!
 
 ### Anatomy of a basic TOD system
 
@@ -137,6 +130,20 @@ With some intermediate representation of the user's intent, you can easily audit
 
 I think it's important to re-iterate that LLMs are not general intelligence. Leaving the ability for an LLM to make decisions is akin to letting users roll a weighted die on how to achieve their goal. It may work most of the time, but it can also blow up in their faces. 
 
+### So why aren't they more popular?
+
+Ultimately, I think they're just hard to build. Large companies have the resources to invest into NLP experts and teams of developers to build out complicated systems and main them. Smaller companies that want to "implement AI" are just trying to find low hanging fruit and build their entire workflows around LLMs. 
+
+There is also a fatigue around "chat bots" happening now. Lots of chat focused applications are thin wrappers over LLMs and they've shown their functionality to be quite limited. There has been a push to integrate LLMs in other ways into products like copilots or agents.
+
+If you have a different theory, I would **love** to hear it though!
+
+## Alternative: Function Calling / Tool Use
+
+For those of us coming into the NLP and TOD space from the outside, we encounter [function calling](https://platform.openai.com/docs/guides/function-calling) or tool use. Function calling is a popular feature implemented in many large LLM services that allow LLMs to "use tools" or reach out to external APIs or to call code.
+
+These are good tools if you're using an LLM as a conversational partner and to enable the LLM to achieve more, but for a TOD system, function calling requires embedding all your business logic into LLM prompts. Ultimately, this means less controllability of a highly non-deterministic system, and ultimately decision-making is left to the LLM. Letting an LLM control your business logic is **not good**! You want full control and accountability of your system!
+
 ## Just use Python
 
 Why create your own language when you can use an existing language like Python? The model already knows how to write Python. 
@@ -160,7 +167,9 @@ You're also beholden to high latencies with external services! You can fine-tune
 
 # Conclusion
 
-So this is what I understand of the current state of the world from my very limited point of view as a web developer trying to figure out how to incorporate LLMs into an existing product. TOD systems and function calling are both tools that leverage LLMs, but each comes with distinct trade-offs.  
+So this is what I understand of the current state of the world from my very limited point of view as a web developer trying to figure out how to incorporate LLMs into an existing product. 
+
+I would love to learn more about Task Oriented Dialog systems and get a better sense of the environment in which they exist. Please reach out! I'd love to hear from you if you've worked on systems like this before.
 
 
 # Other Resources
@@ -173,3 +182,4 @@ So this is what I understand of the current state of the world from my very limi
 [google-research/task-oriented-dialogue](https://github.com/google-research/task-oriented-dialogue?tab=readme-ov-file)
 [budzianowski/multiwoz](https://github.com/budzianowski/multiwoz)
 [Princeton COS598C](https://www.cs.princeton.edu/courses/archive/spring20/cos598C/) [Lecture Notes on TOD](https://www.cs.princeton.edu/courses/archive/spring20/cos598C/lectures/lec16-task-oriented-dialogue.pdf)
+[Making Something out of Nothing: Building Robust Task-oriented Dialogue Systems from Scratch](https://www.amazon.science/alexa-prize/proceedings/making-something-out-of-nothing-building-robust-task-oriented-dialogue-systems-from-scratch)
