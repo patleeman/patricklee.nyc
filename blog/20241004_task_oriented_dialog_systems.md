@@ -174,12 +174,12 @@ I would love to learn more about Task Oriented Dialog systems and get a better s
 
 # Other Resources
 
-[Task-Oriented Dialogue as Dataflow Synthesis](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00333/96470/Task-Oriented-Dialogue-as-Dataflow-Synthesis)
-[Grammar Prompting for Domain-Specific Language Generation with Large Language Models](https://arxiv.org/abs/2305.19234)
-[Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460)
-[Dataflow Dialogue Generation](https://arxiv.org/abs/2308.02323)
-[AnyTOD](https://arxiv.org/abs/2212.09939)
-[google-research/task-oriented-dialogue](https://github.com/google-research/task-oriented-dialogue?tab=readme-ov-file)
-[budzianowski/multiwoz](https://github.com/budzianowski/multiwoz)
-[Princeton COS598C](https://www.cs.princeton.edu/courses/archive/spring20/cos598C/) [Lecture Notes on TOD](https://www.cs.princeton.edu/courses/archive/spring20/cos598C/lectures/lec16-task-oriented-dialogue.pdf)
-[Making Something out of Nothing: Building Robust Task-oriented Dialogue Systems from Scratch](https://www.amazon.science/alexa-prize/proceedings/making-something-out-of-nothing-building-robust-task-oriented-dialogue-systems-from-scratch)
+- [Task-Oriented Dialogue as Dataflow Synthesis](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00333/96470/Task-Oriented-Dialogue-as-Dataflow-Synthesis)
+- [Grammar Prompting for Domain-Specific Language Generation with Large Language Models](https://arxiv.org/abs/2305.19234)
+- [Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460)
+- [Dataflow Dialogue Generation](https://arxiv.org/abs/2308.02323)
+- [AnyTOD](https://arxiv.org/abs/2212.09939)
+- [google-research/task-oriented-dialogue](https://github.com/google-research/task-oriented-dialogue?tab=readme-ov-file)
+- [budzianowski/multiwoz](https://github.com/budzianowski/multiwoz)
+- [Princeton COS598C](https://www.cs.princeton.edu/courses/archive/spring20/cos598C/) [Lecture Notes on TOD](https://www.cs.princeton.edu/courses/archive/spring20/cos598C/lectures/lec16-task-oriented-dialogue.pdf)
+- [Making Something out of Nothing: Building Robust Task-oriented Dialogue Systems from Scratch](https://www.amazon.science/alexa-prize/proceedings/making-something-out-of-nothing-building-robust-task-oriented-dialogue-systems-from-scratch)
