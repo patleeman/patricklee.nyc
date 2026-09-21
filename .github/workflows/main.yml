@@ -32,7 +32,6 @@ jobs:
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./_site
-          cname: patricklee.nyc
           external_repository: patleeman/patleeman.github.io
 
     outputs:
