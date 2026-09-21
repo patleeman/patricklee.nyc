@@ -15,3 +15,8 @@ Spin up the bare bones dev server.
 ```
 npm run dev
 ```
+
+## Lakenridge history
+
+The interactive neighborhood history lives at [`/lakenridge/`](https://patricklee.nyc/lakenridge/).
+It is a map-led, source-conscious guide to Todds Pond and Westminster Ridge, with a timeline, map comparison, house-type explorer, estate-house research lead, and source list.
