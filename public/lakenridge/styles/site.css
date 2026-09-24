@@ -252,6 +252,23 @@ figcaption {
 .house-list dt { font-family: Georgia, "Times New Roman", serif; font-size: 20px; }
 .house-list dd { margin: 0; color: #4a4945; }
 
+.street-list {
+  max-width: 780px;
+  margin: 42px 0 0;
+  border-top: 1px solid var(--rule);
+}
+
+.street-list div {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.street-list dt { font-family: Georgia, "Times New Roman", serif; font-size: 20px; }
+.street-list dd { margin: 0; color: #4a4945; }
+
 .sources-section { padding-bottom: 100px; }
 
 .sources-list {
@@ -341,6 +358,8 @@ figcaption {
   .facts div:nth-child(4) { border-top: 1px solid var(--rule); }
   .house-list div { display: block; }
   .house-list dt { margin-bottom: 5px; }
+  .street-list div { display: block; }
+  .street-list dt { margin-bottom: 5px; }
   .footer-inner { display: block; }
   .footer-inner p + p { margin-top: 12px; }
 }

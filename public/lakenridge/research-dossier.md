@@ -76,6 +76,22 @@ A local-history account says that **A. C. Todd** created Westminster Park in 191
 
 The 1901 county atlas now provides an independent, period indication that **A. C. Todd** held a substantial tract in the relevant part of White Plains. It strengthens the connection between Todd and the landscape, but the exact relationship between that tract, the 1912 Westminster Park story, and the later Westminster Ridge subdivision remains a subject for deed and plat research.
 
+### Streets that were planned but not built
+
+The 1929–31 county atlas shows **Bernard Pl., Francis Pl., Colonial Place,** and the northward road known as **Stang Avenue** beside the reservoir. It is a plat and tax atlas, so a street label shows the planned layout, not proof that every road opened.
+
+The names also refer to different roads:
+
+- **Colonial Place** was built around 1908 and later became **Stafford Place**. It was briefly called Chadwick Place in January 1934 before being renamed Stafford Place in September 1934.
+- **Colonial Terrace** was the earlier name of the road that became **Chadwick Road**. Its northern extension, added around 1927, was first known as Stang Avenue. The extension became Colonial Terrace in 1933, and the whole road became Chadwick Road in 1934.
+- **Bernard Place** and **Francis Place** appear on a local list of White Plains paper streets. The list says they appeared on the official city map but were never built.
+
+The old plan therefore shows a planned street relationship north of Colonial Place/Stafford Place, but the final link to Bernard Place was never completed as a through road. The local street history describes Chadwick Road as ending near the paper Bernard Place alignment. A current Westchester County parcel query lists a Francis Pl parcel under the City of White Plains. A 2012 report describes city-owned Francis Place parcels as parkland and discusses a city purchase of the wildlife corridor between Bernard Place and Chadwick Road, with the possibility of removing paper streets that were no longer needed for development.
+
+This is the best-supported explanation for the gap visible between the old and current maps: the road network was partly built, while the remaining mapped streets were retained as paper alignments and later treated as open-space land. I have not yet found the formal city resolution that would establish whether Bernard Place or Francis Place was legally de-mapped.
+
+Sources: [Westchester County 1929–31 atlas](https://collections.westchestergov.com/digital/collection/1930atlas/id/93/rec/1); [Stafford Place street history](https://wpstreets.weebly.com/home/stafford-place); [Chadwick Road street history](https://wpstreets.weebly.com/home/chadwick-road-garretson-road-gilbert-place); [White Plains paper-street list](https://wpstreets.weebly.com/home/paper-streets); [2012 open-space report](https://dailyvoice.com/article/white-plains-to-buy-wildlife-corridor-for-130k/).
+
 ## How the neighborhood was built up
 
 ### 1. Suburban transportation made the area developable
@@ -184,9 +200,12 @@ The 1939 plot plan and photographs are especially useful visual evidence because
 | 1912 | Local-history accounts associate A. C. / Arthur Todd with Westminster Park and the pond’s name. | Secondary local sources; needs primary confirmation. |
 | Jan. 1917 | Westminster Park plan announced for 52 homes. | Period *Real Estate Record*. |
 | Jul. 1917 | Specific Westminster Park house documented; Norman W. Walker, Joseph J. Eberle, and M. W. Walker named. | Period *Real Estate Record*. |
+| c. 1927 | Chadwick’s northern extension is laid out north of Stafford Place as Stang Avenue. | Local street history; secondary source. |
 | c. 1927 | Fred P. Stafford develops Westminster Ridge and builds a home for himself. | 1939 *Architectural Forum*. |
 | 1928–1932 | Local-history account dates road construction to 1928–29 and public acceptance to 1932. | Secondary local source; verify in municipal records. |
 | 1929–31 | County atlas shows the reservoir beside an emerging street plan. | Westchester County Archives. |
+| 1932 | Chadwick, Garretson, Gilbert, and Stafford Place are described as public roads. | Local street history; secondary source. |
+| 1933–1934 | Stang Avenue becomes Colonial Terrace; the full road becomes Chadwick Road; Colonial Place becomes Stafford Place. | Local street history; secondary source. |
 | By 1930 | About 30 houses built; prices approximately $15,000–$40,000. | 1939 *Architectural Forum*. |
 | 1930s | Depression slows sales and construction. | 1939 *Architectural Forum*. |
 | 1937–1938 | County Housing Corporation, led by Lee Perry, acquires vacant lots and restarts construction. | 1939 *Architectural Forum*. |
@@ -195,6 +214,7 @@ The 1939 plot plan and photographs are especially useful visual evidence because
 | 1940 | White Plains population reaches 40,327, up from 35,830 in 1930. | U.S. Census. |
 | 1940 | County aerial imagery shows the compact pond within the curving-road neighborhood. | Westchester County Historical Aerial Photograph Collection; visual continuity evidence. |
 | 1973 | IRS-derived records list Lakenridge Club’s tax-exempt ruling/year-founded date. | Secondary nonprofit data; verify against incorporation papers. |
+| 2012 | City open-space planning links Francis Place parcels with a corridor between Bernard Place and Chadwick Road; de-mapping paper streets is discussed. | Daily Voice report; formal resolution still to verify. |
 | 2017 | Public lifeguard posting describes Lakenridge as a private Westminster Ridge lake club. | Lakenridge Club document. |
 | 2024 | Club packet and regulations document current lake programs and operating rules. | Lakenridge Club documents. |
 
