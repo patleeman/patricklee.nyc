@@ -183,7 +183,7 @@ figcaption {
   line-height: 1.45;
 }
 
-.credit { white-space: nowrap; }
+.credit { white-space: normal; }
 
 .image-grid {
   display: grid;
@@ -380,3 +380,18 @@ figcaption {
 .story-section > .figure + h3.model-title { margin-top: 64px; }
 .address-list { max-width: 700px; margin: 0 0 24px; padding-left: 20px; }
 .address-list li { margin-bottom: 6px; }
+
+@media (max-width: 700px) {
+  .site-header { position: static; }
+}
+
+@media print {
+  .site-header, .skip-link, .image-hint, .lightbox { display: none !important; }
+  body { background: #fff; font-size: 11pt; }
+  .article-intro { padding: 0 0 24px; }
+  .story-section { padding: 28px 0; }
+  .image-trigger { background: none; }
+  figure, .image-grid { break-inside: avoid; }
+  h2, h3 { break-after: avoid; }
+  a { color: inherit; text-decoration: none; }
+}
