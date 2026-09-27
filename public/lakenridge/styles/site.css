@@ -370,3 +370,13 @@ figcaption {
 
 .story-section > .image-grid + p,
 .story-section > .figure + p { margin-top: 40px; }
+
+.story-section > h3.model-title {
+  max-width: 700px;
+  margin: 56px 0 14px;
+  font-size: 26px;
+}
+.story-section > .image-grid + h3.model-title,
+.story-section > .figure + h3.model-title { margin-top: 64px; }
+.address-list { max-width: 700px; margin: 0 0 24px; padding-left: 20px; }
+.address-list li { margin-bottom: 6px; }
