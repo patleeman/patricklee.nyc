@@ -367,3 +367,6 @@ figcaption {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+.story-section > .image-grid + p,
+.story-section > .figure + p { margin-top: 40px; }
